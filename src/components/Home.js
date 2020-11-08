@@ -1,10 +1,13 @@
 import React from 'react';
+import SideNav from './SideNav'
+
+
 
 const Home = () => {
 
 return (
-    <div>
-      <h1>Hello World</h1>
+    <div >
+       <SideNav />
     </div>
 )
 }
