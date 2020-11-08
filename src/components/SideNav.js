@@ -8,10 +8,13 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
+
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
+
+import Avatar from '@material-ui/core/Avatar';
+import grey from "@material-ui/core/colors/grey";
+import { fontFamily } from '@material-ui/system';
+import Img from '../assets/IMG_7527.png' 
 
 const drawerWidth = 500;
 
@@ -22,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     width: `calc(100% - ${drawerWidth}px)`,
     marginLeft: drawerWidth,
+    backgroundColor: grey[300],
+    color: 'black',
+
   },
   drawer: {
     width: drawerWidth,
@@ -37,20 +43,26 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
     padding: theme.spacing(3),
   },
+  tapography: {
+      fontFamily: 'Comic Sans MS, cursive, sans-serif'
+  },
+  cardMedia: {
+    width: '40%',  
+    borderRadius: '50%',
+    margin: '50px 0px 0px 150px',
+    borderColor: 'red'
+
+},
 }));
+
+
 
 const SideNav = () => {
     const classes = useStyles();
 return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar>
-          <Typography style={{fontFamily: 'Comic Sans MS, cursive, sans-serif'}} variant="h6" noWrap>
-            Erdoan (Ed) Shaziman
-          </Typography>
-        </Toolbar>
-      </AppBar>
+
       <Drawer
         className={classes.drawer}
         variant="permanent"
@@ -59,9 +71,13 @@ return (
         }}
         anchor="left"
       >
-
+           <img src={Img} className={classes.cardMedia} alt="Ed Shaziman" />
       </Drawer>
       <main className={classes.content}>
+      <div className={classes.toolbar} />
+          <Typography paragraph > 
+    
+          </Typography>    
       </main>
     </div>
 )
