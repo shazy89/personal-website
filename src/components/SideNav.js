@@ -44,16 +44,22 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
   tapography: {
-      fontFamily: 'Comic Sans MS, cursive, sans-serif'
+      fontFamily: ' cursive, sans-serif',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      marginTop: '30px'
+      
   },
   cardMedia: {
     width: '40%',  
     borderRadius: '50%',
-    margin: '50px 0px 0px 150px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '50px',
     borderColor: 'red'
-
 },
 }));
+
 
 
 
@@ -72,15 +78,18 @@ return (
         anchor="left"
       >
            <img src={Img} className={classes.cardMedia} alt="Ed Shaziman" />
+  
+        <Typography paragraph variant="h4" className={classes.tapography}> 
+             Erdoan (Ed) Shaziman 
+          </Typography>  
       </Drawer>
       <main className={classes.content}>
       <div className={classes.toolbar} />
-          <Typography paragraph > 
-    
-          </Typography>    
+  
       </main>
     </div>
 )
 }
 
 export default SideNav;
+
