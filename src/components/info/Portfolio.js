@@ -1,9 +1,13 @@
 import React from 'react'
 
-const Resume = () => (
-    <>
-    <h1 style={{margin: '50%'}}>Portfolio</h1>
-    </>
-)
+
+const Resume = () => {
+
+    return (
+        <div >
+ <h1>HEEEEYYYYY</h1>
+        </div>
+    )
+}
 export default Resume
 

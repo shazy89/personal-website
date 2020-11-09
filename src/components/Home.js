@@ -1,11 +1,11 @@
 import React from 'react';
-import SideNav from './sidenav/SideNav'
+import SideNav from '../components/sidenav/SideNav'
 
 const Home = () => {
 
 return (
     <div >
-       <SideNav />
+       <h1>Hey YOU</h1>
     </div>
 )
 }

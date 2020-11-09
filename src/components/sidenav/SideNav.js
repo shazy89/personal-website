@@ -6,15 +6,18 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
-
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import grey from "@material-ui/core/colors/grey";
 import { fontFamily } from '@material-ui/system';
 import Img from '../../assets/IMG_7527.png' 
 import SideNavLinks from './SideNavLinks'
-
+import Home from '../Home'
+import Resume from '../info/Resume'
+import About from '../info/About'
+import Portfolio from '../info/Portfolio'
 const drawerWidth = 450;
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
   },
@@ -27,7 +30,13 @@ const useStyles = makeStyles(() => ({
     width: drawerWidth,
     backgroundColor: grey[100]
   },
-  // necessary for content to be below app bar
+   // necessary for content to be below app bar
+   toolbar: theme.mixins.toolbar,
+   content: {
+     flexGrow: 1,
+     backgroundColor: theme.palette.background.default,
+     padding: theme.spacing(3),
+   },
 
   tapography: {
       fontFamily: ' Trebuchet MS,, sans-serif',
@@ -50,17 +59,17 @@ const useStyles = makeStyles(() => ({
       fontSize: '20px',
       color: 'black'
     },
+    image: {
+      width: '35%',  
+      borderRadius: '50%',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      marginTop: '50px',
+      borderColor: 'red'
+  },
+  }));
    
 
-   image: {
-     width: '35%',  
-     borderRadius: '50%',
-     marginLeft: 'auto',
-     marginRight: 'auto',
-     marginTop: '50px',
-     borderColor: 'red'
- },
- }));
       
  const SideNav = () => {
      const classes = useStyles();
@@ -85,13 +94,26 @@ const useStyles = makeStyles(() => ({
               <SideNavLinks tapography3={classes.tapography3}/>
           </List>
        </Drawer>
+       <main className={classes.content}>
+          <div className={classes.toolbar} />
+    
+                <Switch>
+                   <Route  exact path="/" component={Home} />
+                   <Route  path="/resume" component={ Resume }/> 
+                   <Route  path="/about" component={ About }/> 
+                   <Route  path="/portfolio"  component={ Portfolio }/> 
+                </Switch>
+       
+       </main>
      </div>
  )
  }
    
+             
            
  
  export default SideNav;
+
 
   
           
