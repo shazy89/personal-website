@@ -15,6 +15,7 @@ import Avatar from '@material-ui/core/Avatar';
 import grey from "@material-ui/core/colors/grey";
 import { fontFamily } from '@material-ui/system';
 import Img from '../../assets/IMG_7527.png' 
+import SideNavLinks from './SideNavLinks'
 
 const drawerWidth = 450;
 
@@ -33,8 +34,10 @@ const useStyles = makeStyles((theme) => ({
     width: drawerWidth,
     flexShrink: 0,
   },
+
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: grey[100]
   },
   // necessary for content to be below app bar
   toolbar: theme.mixins.toolbar,
@@ -60,9 +63,6 @@ const useStyles = makeStyles((theme) => ({
 },
 }));
 
-
-
-
 const SideNav = () => {
     const classes = useStyles();
 return (
@@ -82,14 +82,19 @@ return (
         <Typography paragraph variant="h4" className={classes.tapography}> 
              Erdoan (Ed) Shaziman 
           </Typography>  
+          <Typography variant="h5" className={classes.tapography}>Full STtack Web Developer</Typography>
+          <Typography ><SideNavLinks /></Typography>
       </Drawer>
       <main className={classes.content}>
       <div className={classes.toolbar} />
-  
+           
       </main>
     </div>
 )
 }
 
 export default SideNav;
+
+
+
 
