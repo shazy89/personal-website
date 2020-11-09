@@ -14,9 +14,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import grey from "@material-ui/core/colors/grey";
 import { fontFamily } from '@material-ui/system';
-import Img from '../assets/IMG_7527.png' 
+import Img from '../../assets/IMG_7527.png' 
 
-const drawerWidth = 500;
+const drawerWidth = 450;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -50,8 +50,8 @@ const useStyles = makeStyles((theme) => ({
       marginTop: '30px'
       
   },
-  cardMedia: {
-    width: '40%',  
+  image: {
+    width: '35%',  
     borderRadius: '50%',
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -77,7 +77,7 @@ return (
         }}
         anchor="left"
       >
-           <img src={Img} className={classes.cardMedia} alt="Ed Shaziman" />
+           <img src={Img} className={classes.image} alt="Ed Shaziman" />
   
         <Typography paragraph variant="h4" className={classes.tapography}> 
              Erdoan (Ed) Shaziman 

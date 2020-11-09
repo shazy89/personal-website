@@ -1,5 +1,5 @@
 import React from 'react';
-import SideNav from './SideNav'
+import SideNav from './sidenav/SideNav'
 
 const Home = () => {
 
