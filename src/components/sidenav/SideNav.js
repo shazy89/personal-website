@@ -6,16 +6,10 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
 
-import ListItemText from '@material-ui/core/ListItemText';
-
-import Avatar from '@material-ui/core/Avatar';
 import grey from "@material-ui/core/colors/grey";
 import { fontFamily } from '@material-ui/system';
 import Img from '../../assets/IMG_7527.png' 
-import SideNavLinks from './SideNavLinks'
 
 const drawerWidth = 450;
 
@@ -83,7 +77,10 @@ return (
              Erdoan (Ed) Shaziman 
           </Typography>  
           <Typography variant="h5" className={classes.tapography}>Full STtack Web Developer</Typography>
-          <Typography ><SideNavLinks /></Typography>
+          <List>
+
+         </List>
+          
       </Drawer>
       <main className={classes.content}>
       <div className={classes.toolbar} />
@@ -94,6 +91,8 @@ return (
 }
 
 export default SideNav;
+  
+          
 
 
 
