@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Resume = () => {
+const Portfolio = () => {
 
     return (
         <div >
@@ -9,5 +9,5 @@ const Resume = () => {
         </div>
     )
 }
-export default Resume
+export default Portfolio
 

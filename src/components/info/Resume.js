@@ -1,9 +1,14 @@
 import React from 'react'
+import pdf from '../../assets/ed_resume.pdf'
 
-const Resume = () => (
+const Resume = () => {
+
+    return (
 <div>
-    <h1>Resume</h1>
- </div>
-)
-export default Resume
+  <embed src={pdf}width="100%" height="2100px" />  
+</div>
+
+    )
+}
+export default Resume;
 
