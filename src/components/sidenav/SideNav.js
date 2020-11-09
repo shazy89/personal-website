@@ -14,16 +14,9 @@ import SideNavLinks from './SideNavLinks'
 
 const drawerWidth = 450;
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     display: 'flex',
-  },
-  appBar: {
-    width: `calc(100% - ${drawerWidth}px)`,
-    marginLeft: drawerWidth,
-    backgroundColor: grey[300],
-    color: 'black',
-
   },
   drawer: {
     width: drawerWidth,
@@ -35,24 +28,29 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: grey[100]
   },
   // necessary for content to be below app bar
-  toolbar: theme.mixins.toolbar,
-  content: {
-    flexGrow: 1,
-    backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(3),
-  },
+
   tapography: {
-      fontFamily: ' Optima, sans-serif',
+      fontFamily: ' Trebuchet MS,, sans-serif',
       marginLeft: 'auto',
       marginRight: 'auto',
       marginTop: '30px'
    },
   tapography2: {
-      fontFamily: ' Optima, sans-serif',
+      fontFamily: ' Trebuchet MS,, sans-serif',
       marginLeft: 'auto',
       marginRight: 'auto',
       marginTop: '10px'
    },
+  tapography3: {
+      fontFamily: ' Trebuchet MS,, sans-serif',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      marginTop: '20px',
+      textDecoration: 'none',
+      fontSize: '20px',
+      color: 'black'
+    },
+   
 
    image: {
      width: '35%',  
@@ -64,41 +62,37 @@ const useStyles = makeStyles((theme) => ({
  },
  }));
       
-
-const SideNav = () => {
-    const classes = useStyles();
-return (
-    <div className={classes.root}>
-      <CssBaseline />
-
-      <Drawer
-        className={classes.drawer}
-        variant="permanent"
-        classes={{
-          paper: classes.drawerPaper,
-        }}
-        anchor="left"
-      >
-           <img src={Img} className={classes.image} alt="Ed Shaziman" />
-  
-        <Typography paragraph variant="h4" className={classes.tapography}> 
-             Erdoan (Ed) Shaziman 
-          </Typography>  
-          <Typography variant="h5" className={classes.tapography2}>Full STtack Web Developer</Typography>
-          <List>
-             <SideNavLinks tapography2={classes.tapography2}/>
-         </List>
-          
-      </Drawer>
-      <main className={classes.content}>
-      <div className={classes.toolbar} />
+ const SideNav = () => {
+     const classes = useStyles();
+ return (
+     <div className={classes.root}>
+       <CssBaseline />
+ 
+       <Drawer
+         className={classes.drawer}
+         variant="permanent"
+         classes={{
+           paper: classes.drawerPaper,
+         }}
+         anchor="left"
+       >
+            <img src={Img} className={classes.image} alt="Ed Shaziman" />
+           <Typography paragraph variant="h4" className={classes.tapography}> 
+              Erdoan (Ed) Shaziman 
+           </Typography>  
+           <Typography variant="h5" className={classes.tapography2}>Full Stack Web Developer</Typography>
+           <List>
+              <SideNavLinks tapography3={classes.tapography3}/>
+          </List>
+       </Drawer>
+     </div>
+ )
+ }
+   
            
-      </main>
-    </div>
-)
-}
+ 
+ export default SideNav;
 
-export default SideNav;
   
           
 

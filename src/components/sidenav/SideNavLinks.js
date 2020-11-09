@@ -1,27 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
 import ListItem from '@material-ui/core/ListItem';
-    
-  const SideNavLinks = ({tapography2}) => {
+import Grid from '@material-ui/core/Grid'
+  const SideNavLinks = ({tapography3}) => {
   
 
      return ( 
       <div> 
-        <ListItem button  > 
-           <Link to={'/Home'} className={tapography2}>Home</Link>
-       </ListItem>
-        <ListItem button  > 
-           <Link to={'/Resume'} className={tapography2}>Resume</Link>
-       </ListItem>
-       <ListItem button  > 
-          <Link to={'/Portfolio'} className={tapography2}>Portfolio</Link>
-       </ListItem>
-        <ListItem button  > 
-            <Link to={'/About'} className={tapography2}>About</Link>
-       </ListItem>
+        <Grid
+          container
+          direction="column"
+          justify="center"
+          alignItems="center"
+        >
+            <Link to={'/home'} className={tapography3}>Home</Link>
+            <Link to={'/resume'} className={tapography3}>Resume</Link>
+            <Link to={'/portfolio'} className={tapography3}>Portfolio</Link>
+            <Link to={'/hbout'} className={tapography3}>About</Link>
+         </Grid>
     </div>
    )
   };
+       
+        
+       
+       
+       
+        
 
 
    

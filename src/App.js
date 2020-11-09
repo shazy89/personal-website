@@ -4,15 +4,15 @@ import Home from './components/Home'
 import Resume from './components/info/Resume'
 import About from './components/info/About'
 import Portfolio from './components/info/Portfolio'
-
+import SideNav from './components/sidenav/SideNav'
 function App() {
   return (
   <BrowserRouter>
+    
        <Switch>
-          <Route path="/" component={ Home }/> 
-          <Route exact path="Resume" component={ Resume }/> 
-          <Route exact path="About" component={ About }/> 
-          <Route exact path="Portfolio" component={ Portfolio }/> 
+          <Route exact path="/resume" component={ Resume }/> 
+          <Route exact path="/about" component={ About }/> 
+          <Route exact path="/portfolio" component={ Portfolio }/> 
        </Switch>
   </BrowserRouter>
   );

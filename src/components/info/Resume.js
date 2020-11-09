@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Resume = () => (
-    <>
-    <h1>Resume</h1>
-    </>
+<div>
+    <h1 style={{marginLeft: 'auto', marginRight: 'auto'}}>Resume</h1>
+ </div>
 )
 export default Resume
 
