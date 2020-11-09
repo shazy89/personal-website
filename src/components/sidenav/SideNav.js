@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import grey from "@material-ui/core/colors/grey";
 import { fontFamily } from '@material-ui/system';
 import Img from '../../assets/IMG_7527.png' 
+import SideNavLinks from './SideNavLinks'
 
 const drawerWidth = 450;
 
@@ -41,21 +42,28 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
   tapography: {
-      fontFamily: ' cursive, sans-serif',
+      fontFamily: ' Optima, sans-serif',
       marginLeft: 'auto',
       marginRight: 'auto',
       marginTop: '30px'
+   },
+  tapography2: {
+      fontFamily: ' Optima, sans-serif',
+      marginLeft: 'auto',
+      marginRight: 'auto',
+      marginTop: '10px'
+   },
+
+   image: {
+     width: '35%',  
+     borderRadius: '50%',
+     marginLeft: 'auto',
+     marginRight: 'auto',
+     marginTop: '50px',
+     borderColor: 'red'
+ },
+ }));
       
-  },
-  image: {
-    width: '35%',  
-    borderRadius: '50%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginTop: '50px',
-    borderColor: 'red'
-},
-}));
 
 const SideNav = () => {
     const classes = useStyles();
@@ -76,9 +84,9 @@ return (
         <Typography paragraph variant="h4" className={classes.tapography}> 
              Erdoan (Ed) Shaziman 
           </Typography>  
-          <Typography variant="h5" className={classes.tapography}>Full STtack Web Developer</Typography>
+          <Typography variant="h5" className={classes.tapography2}>Full STtack Web Developer</Typography>
           <List>
-
+             <SideNavLinks tapography2={classes.tapography2}/>
          </List>
           
       </Drawer>

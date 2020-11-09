@@ -1,24 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom'; 
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
-
-const SideNavLinks = () => (
-   <ListItem button  > 
-     <Link to={'/Home'}>Home</Link>
-     <ListItemText  />
-     <Link to={'/Resume'}>Resume</Link>
-     <ListItemText  />
-     <Link to={'/Portfolio'}>Portfolio</Link>
-     <ListItemText  />
-     <Link to={'/About'}>About</Link>
-     <ListItemText  />
-  </ListItem>
+    
+  const SideNavLinks = ({tapography2}) => {
   
-)
+
+     return ( 
+      <div> 
+        <ListItem button  > 
+           <Link to={'/Home'} className={tapography2}>Home</Link>
+       </ListItem>
+        <ListItem button  > 
+           <Link to={'/Resume'} className={tapography2}>Resume</Link>
+       </ListItem>
+       <ListItem button  > 
+          <Link to={'/Portfolio'} className={tapography2}>Portfolio</Link>
+       </ListItem>
+        <ListItem button  > 
+            <Link to={'/About'} className={tapography2}>About</Link>
+       </ListItem>
+    </div>
+   )
+  };
+
+
+   
+  
 
 export default SideNavLinks;
-
-//   </Link> 
