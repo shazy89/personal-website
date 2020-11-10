@@ -12,8 +12,8 @@ const Footer = () => {
               justify="center"
               alignItems="baseline" >  
            <a style={{marginRight:'20px', color:'grey'}} href="mailto:erdo.shazy123@gmail.com"><EmailIcon /></a>
-           <a style={{color:'grey'}} href="https://github.com/shazy89"><GitHubIcon /></a>
-           <a style={{marginLeft:'20px', color:'grey' }} href="https://www.linkedin.com/in/erdoan-ed-shaziman-0533611b9/"><LinkedInIcon /></a>
+           <a style={{color:'grey'}}  target="_blank" href="https://github.com/shazy89"><GitHubIcon /></a>
+           <a target="_blank" style={{marginLeft:'20px', color:'grey' }} href="https://www.linkedin.com/in/erdoan-ed-shaziman-0533611b9/"><LinkedInIcon /></a>
         </Grid>
        </div>
    )

@@ -13,6 +13,7 @@ import Resume from '../info/Resume'
 import About from '../info/About'
 import Portfolio from '../info/Portfolio'
 import Footer from './Footer'
+import backgroundImg from '../../assets/full01.jpg'
 
 
 
@@ -21,8 +22,8 @@ const drawerWidth = 400;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-
   },
+
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
@@ -36,8 +37,8 @@ const useStyles = makeStyles((theme) => ({
    toolbar: theme.mixins.toolbar,
    content: {
      flexGrow: 1,
-     backgroundColor: theme.palette.background.default,
-     padding: theme.spacing(3),
+     backgroundImage: `url(${backgroundImg})`,
+     padding: theme.spacing(2),
    },
    tapography: {
        fontFamily: ' Trebuchet MS,, sans-serif',
@@ -52,7 +53,7 @@ const useStyles = makeStyles((theme) => ({
        marginTop: '10px'
     },
    tapography3: {
-       fontFamily: ' Trebuchet MS,, sans-serif',
+       fontFamily: ' Trebuchet MS, sans-serif',
        marginLeft: 'auto',
        marginRight: 'auto',
        marginTop: '20px',
@@ -95,7 +96,7 @@ const useStyles = makeStyles((theme) => ({
             <Footer />
           </Drawer>
          <main className={classes.content} >
-            <div className={classes.toolbar} />
+            <div  className={classes.toolbar}/>
               <Switch>
                  <Route  exact path="/" component={Home} />
                  <Route  path="/resume" component={ Resume }/> 
