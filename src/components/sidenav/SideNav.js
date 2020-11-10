@@ -22,6 +22,7 @@ const drawerWidth = 400;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+ 
   },
 
   drawer: {
@@ -90,7 +91,7 @@ const useStyles = makeStyles((theme) => ({
           <Typography paragraph variant="h4" className={classes.tapography}> 
              Erdoan (Ed) Shaziman 
             </Typography>  
-             <Typography variant="h6" className={classes.tapography2}>Full Stack Web Developer</Typography>
+             
           <List>
             <SideNavLinks tapography3={classes.tapography3}/>
           </List>
