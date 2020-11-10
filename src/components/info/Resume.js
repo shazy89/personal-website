@@ -5,7 +5,7 @@ const Resume = () => {
 
     return (
 <div>
-  <embed src={pdf}width="100%" height="2100px" />  
+  <embed src={pdf}width="100%" height="1300px" />  
 </div>
 
     )
