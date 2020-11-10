@@ -13,7 +13,7 @@ import Resume from '../info/Resume'
 import About from '../info/About'
 import Portfolio from '../info/Portfolio'
 import Footer from './Footer'
-import backgroundImg from '../../assets/full01.jpg'
+import backgroundImg from '../../assets/img7.png'
 
 
 
@@ -31,29 +31,30 @@ const useStyles = makeStyles((theme) => ({
 
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: grey[100]
+    backgroundColor: grey[200]
   },
    // necessary for content to be below app bar
    toolbar: theme.mixins.toolbar,
    content: {
      flexGrow: 1,
      backgroundImage: `url(${backgroundImg})`,
-     padding: theme.spacing(2),
+     padding: theme.spacing(0),
    },
+
    tapography: {
-       fontFamily: ' Trebuchet MS,, sans-serif',
+       fontStyle: "italic",
        marginLeft: 'auto',
        marginRight: 'auto',
        marginTop: '30px'
     },
    tapography2: {
-       fontFamily: ' Trebuchet MS,, sans-serif',
+       fontStyle: "italic",
        marginLeft: 'auto',
        marginRight: 'auto',
        marginTop: '10px'
     },
    tapography3: {
-       fontFamily: ' Trebuchet MS, sans-serif',
+       fontStyle: "italic",
        marginLeft: 'auto',
        marginRight: 'auto',
        marginTop: '20px',
@@ -101,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
                  <Route  exact path="/" component={Home} />
                  <Route  path="/resume" component={ Resume }/> 
                  <Route  path="/about" component={ About }/> 
-                 <Route  path="/portfolio"  component={ Portfolio }/> 
+                 <Route  path="/portfolio" component={ Portfolio }/> 
               </Switch>
          </main>
        </div>
