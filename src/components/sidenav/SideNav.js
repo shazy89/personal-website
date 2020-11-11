@@ -6,14 +6,14 @@ import List from '@material-ui/core/List';
 import Typography from '@material-ui/core/Typography';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import grey from "@material-ui/core/colors/grey";
-import Img from '../../assets/IMG_7527.png' 
+import Img from '../../assets/images/IMG_7527.png' 
 import SideNavLinks from './SideNavLinks'
 import Home from '../info/Home'
 import Resume from '../info/Resume'
 import About from '../info/About'
-import Portfolio from '../info/Portfolio'
+import Portfolio from '../info/portfolio/Portfolio'
 import Footer from './Footer'
-import backgroundImg from '../../assets/img7.png'
+import backgroundImg from '../../assets/images/img7.png'
 
 
 
@@ -79,22 +79,21 @@ const useStyles = makeStyles((theme) => ({
    return (
        <div className={classes.root} >
          <CssBaseline />
-         <Drawer
-           className={classes.drawer}
-           variant="permanent"
-           classes={{
-             paper: classes.drawerPaper,
-           }}
-           anchor="left"
+              <Drawer
+                className={classes.drawer}
+                variant="permanent"
+                classes={{
+                 paper: classes.drawerPaper,
+                }}
+                anchor="left"
          >
-            <img src={Img} className={classes.image} alt="Ed Shaziman" />
-          <Typography paragraph variant="h4" className={classes.tapography}> 
-             Erdoan (Ed) Shaziman 
-            </Typography>  
-             
-          <List>
-            <SideNavLinks tapography3={classes.tapography3}/>
-          </List>
+              <img src={Img} className={classes.image} alt="Ed Shaziman" />
+                <Typography paragraph variant="h4" className={classes.tapography}> 
+                  Erdoan (Ed) Shaziman 
+                </Typography>  
+               <List>
+                 <SideNavLinks tapography3={classes.tapography3}/>
+               </List>
             <Footer />
           </Drawer>
          <main className={classes.content} >
@@ -109,6 +108,9 @@ const useStyles = makeStyles((theme) => ({
        </div>
    )};
    export default SideNav;  
+             
+           
+
 
    
 
