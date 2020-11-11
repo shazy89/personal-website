@@ -14,6 +14,7 @@ import About from '../info/About'
 import Portfolio from '../info/portfolio/Portfolio'
 import Footer from './Footer'
 import backgroundImg from '../../assets/images/img7.png'
+import Grid from '@material-ui/core/Grid';
 
 const drawerWidth = 400;
 
@@ -103,6 +104,7 @@ const useStyles = makeStyles((theme) => ({
                  <Route  path="/portfolio" component={ Portfolio }/> 
               </Switch>
          </main>
+
        </div>
    )};
    export default SideNav;  

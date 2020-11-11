@@ -21,6 +21,7 @@ let portProjects = file.projects.map(proj => <Card key={proj.id} project={proj} 
            direction="column"
            justify="flex-start"
            alignItems="stretch"
+          
             >
            {portProjects}
         

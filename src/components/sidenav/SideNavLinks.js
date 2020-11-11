@@ -4,13 +4,14 @@ import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 
 const SideNavLinks = ({tapography3}) => {
+
 const [HomeUnderLine, setHomeUnderLine] = useState(true)
 const [ResumeUnderLine, setResumeUnderLine] = useState(false)
 const [PortfolioUnderLine, setPortfolioUnderLine] = useState(false)
 const [AboutUnderLine, setAboutUnderLine] = useState(false)
 
 const linkSelect = (e) => {
-  
+  debugger
     switch(e.target.text) {
         case('Home'): {
             setHomeUnderLine(true)
@@ -37,7 +38,7 @@ const linkSelect = (e) => {
            setPortfolioUnderLine(false)
            break;
      }
-    }
+  }
 }
 return ( 
  <div> 
@@ -59,6 +60,7 @@ return (
 </div>
 )
 }; 
+export default SideNavLinks;
 
 
         
@@ -73,4 +75,3 @@ return (
    
   
 
-export default SideNavLinks;

@@ -7,11 +7,13 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import Hidden from '@material-ui/core/Hidden';
 
 
 const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 800,
+      flexWrap: 'wrap',
       margin: '5px',
       breakpoints: {
         values: {
@@ -49,8 +51,12 @@ return (
           <Typography gutterBottom variant="h5" component="h2">
                {project.name}
           </Typography>
+          
           <Typography variant="body2" color="textSecondary" component="p">
                {project.info}
+          </Typography> <br />
+          <Typography variant="body2" color="textSecondary" component="p">
+               {project.technologies}
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -70,8 +76,10 @@ return (
     </div>
    )
    };
-   
+
    export default ProjectCard
+
+      
 
         
 
