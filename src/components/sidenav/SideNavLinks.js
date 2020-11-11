@@ -11,7 +11,7 @@ const [PortfolioUnderLine, setPortfolioUnderLine] = useState(false)
 const [AboutUnderLine, setAboutUnderLine] = useState(false)
 
 const linkSelect = (e) => {
-  debugger
+
     switch(e.target.text) {
         case('Home'): {
             setHomeUnderLine(true)
