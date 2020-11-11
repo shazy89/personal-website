@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
@@ -6,7 +6,7 @@ import Avatar from '@material-ui/core/Avatar';
 import SignalWifiOffIcon from '@material-ui/icons/SignalWifiOff';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-
+import file from './Projects'
 
 
 const defaultProps = {
@@ -14,11 +14,12 @@ const defaultProps = {
     style: { width: '100%', height: '53rem' },
     borderColor: 'text.primary',
     fontStyle: "italic",
-    
   }; 
+    
 
   const Portfolio = () => {
-  
+let str = file.projects
+
       return (
     <Typography component="div">
        <Box   border={0} {...defaultProps} >
