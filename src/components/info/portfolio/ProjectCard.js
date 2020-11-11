@@ -4,7 +4,6 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
@@ -13,7 +12,16 @@ import Paper from '@material-ui/core/Paper';
 const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 800,
-      margin: '5px'
+      margin: '5px',
+      breakpoints: {
+        values: {
+          xs: 0,
+          sm: 400,
+          md: 960,
+          lg: 1280,
+          xl: 1920,
+        },
+      },
     },
     media: {
       height: 200,
@@ -22,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
       '& > *': {
         margin: theme.spacing(1),
         width: theme.spacing(31),
-        height: theme.spacing(20)
+        height: theme.spacing(20),
     },
    }
   }));
@@ -31,15 +39,12 @@ const ProjectCard = ({project}) => {
     const classes = useStyles();
 
 return (
-    <div>
+    <div id={project.id} style={{marginLeft: '50px'}}>
     <Card className={classes.root}>
       <CardActionArea>
-      <div className={classes.media}>
-
-      {project.imgs.map(img => <Paper elevation={3} style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}/>)}
-
+    <div className={classes.media}>
+      {project.imgs.map((img, ind)=> <Paper key={ind} elevation={3} style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}/>)}
     </div>
-        
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
                {project.name}
@@ -63,10 +68,13 @@ return (
       </CardActions>
     </Card>
     </div>
+   )
+   };
+   
+   export default ProjectCard
+
+        
+
       
      
-)
-};
-
-export default ProjectCard
 
