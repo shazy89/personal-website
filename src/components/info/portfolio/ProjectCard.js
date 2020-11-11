@@ -7,48 +7,64 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Paper from '@material-ui/core/Paper';
 
-const useStyles = makeStyles({
+
+const useStyles = makeStyles((theme) => ({
     root: {
       maxWidth: 800,
       margin: '5px'
     },
     media: {
       height: 200,
+      display: 'flex',
+      flexWrap: 'wrap',
+      '& > *': {
+        margin: theme.spacing(1),
+        width: theme.spacing(31),
+        height: theme.spacing(20)
     },
-  });
+   }
+  }));
 
-const ProjectCard = () => {
+const ProjectCard = ({project}) => {
     const classes = useStyles();
+
 return (
     <div>
     <Card className={classes.root}>
       <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
+      <div className={classes.media}>
+
+      {project.imgs.map(img => <Paper elevation={3} style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}/>)}
+
+    </div>
+        
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
+               {project.name}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+               {project.info}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          Share
+         <a href={project.github} target="_blank" rel="noreferrer"> Github</a>
         </Button>
         <Button size="small" color="primary">
-          Learn More
+        <a href={project.demo} target="_blank" rel="noreferrer"> Demo</a>
         </Button>
+        { project.webApp ?
+        <Button size="small" color="primary">
+        <a href={project.webApp} target="_blank" rel="noreferrer"> live app</a>
+        </Button> : null}
       </CardActions>
     </Card>
     </div>
+      
+     
 )
 };
 

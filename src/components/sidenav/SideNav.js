@@ -15,8 +15,6 @@ import Portfolio from '../info/portfolio/Portfolio'
 import Footer from './Footer'
 import backgroundImg from '../../assets/images/img7.png'
 
-
-
 const drawerWidth = 400;
 
 const useStyles = makeStyles((theme) => ({

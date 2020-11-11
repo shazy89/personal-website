@@ -13,7 +13,7 @@ const defaultProps = {
 
   const Portfolio = () => {
 let portProjects = file.projects.map(proj => <Card key={proj.id} project={proj} />)
-  
+
       return (
      <div > 
        <Grid
