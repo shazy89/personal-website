@@ -27,7 +27,7 @@ const About = () => {
               </Typography>
               <Typography gutterBottom variant="h5" style={{marginTop: '40px'}}  color="textSecondary" component="h2"> 
                  Hi! I’m Erdoan but I go by Ed. 
-                 I’ve always been interested in software engineering and recently decided to change me career and dive into coding! 
+                 I’ve always been interested in software engineering and recently decided to change my career and dive into coding! 
                  It’s an exciting journey and I enjoy getting lost in writing or debugging code. 
                  I can truly say that I am passionate about writing code and will not give up until something is perfect.
               </Typography>
