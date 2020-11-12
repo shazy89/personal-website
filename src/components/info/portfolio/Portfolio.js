@@ -10,10 +10,8 @@ const defaultProps = {
     fontStyle: "italic",
   }; 
     
-
-  const Portfolio = () => {
-let portProjects = file.projects.map(proj => <Card key={proj.id} project={proj} />)
-
+const Portfolio = () => {
+  let portProjects = file.projects.map(proj => <Card key={proj.id} project={proj} />)
   return (
        <div > 
          <Grid
@@ -30,6 +28,8 @@ let portProjects = file.projects.map(proj => <Card key={proj.id} project={proj} 
         )
     }
     export default Portfolio
+
+
 
 
   
