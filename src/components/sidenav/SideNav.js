@@ -14,7 +14,7 @@ import About from '../info/About'
 import Portfolio from '../info/portfolio/Portfolio'
 import Footer from './Footer'
 import backgroundImg from '../../assets/images/img7.png'
-import Grid from '@material-ui/core/Grid';
+import Notfound from '../NotFound';
 
 const drawerWidth = 400;
 
@@ -113,6 +113,7 @@ const useStyles = makeStyles((theme) => ({
                  <Route  path="/resume" component={ Resume }/> 
                  <Route  path="/about" component={ About }/> 
                  <Route  path="/portfolio" component={ Portfolio }/> 
+                 <Route component={Notfound} />
               </Switch>
          </main>
        
