@@ -4,6 +4,19 @@ module.exports = {
   projects: [
           {
             id: 1,
+            name: 'friends',
+            github: 'https://github.com/shazy89/friends_app',
+            webApp: null,
+            demo:   'https://www.youtube.com/watch?v=7GHLfw1aOUQ&list=PL0zbnzgKNis1xNPhk3jmGx_KhQgK1SzaS&index=9&t=7s',
+            info:   `Social Media App featuring real-time message delivery, user profile customization, easy network building, user authentication, mobile optimized.`,
+            technologies: 'Action Cable, React, React-Router, Redux, Thunk, CSS, JWT Auth, Ruby on Rails, PostgreSQL, Cloudinary',
+            imgs: ['https://res.cloudinary.com/dytheecsk/image/upload/v1607092841/portfolio/Screen_Shot_2020-12-02_at_2.16.06_PM_rctf76.png', 
+                   'https://res.cloudinary.com/dytheecsk/image/upload/v1607092844/portfolio/Screen_Shot_2020-12-02_at_2.16.17_PM_i3zicb.png',
+                    'https://res.cloudinary.com/dytheecsk/image/upload/v1607092846/portfolio/Screen_Shot_2020-12-02_at_2.16.32_PM_jgwlme.png']
+                    
+          },
+          {
+            id: 2,
             name: 'RentMe',
             github: 'https://github.com/shazy89/rent-me-front-end',
             webApp: 'https://rent-me-front-end.herokuapp.com/',
@@ -17,7 +30,7 @@ module.exports = {
             
         },
         {
-          id: 2, 
+          id: 3, 
           name: 'FootBall Masters',
           github: 'https://github.com/shazy89/football-masters',
           webApp: null,
@@ -29,7 +42,7 @@ module.exports = {
                   'https://res.cloudinary.com/dytheecsk/image/upload/v1605119995/portfolio/fm1_p1oqsy.png']
         },
         {
-            id: 3,
+            id: 4,
             name: 'OneTouch',
             github: 'https://github.com/shazy89/One-Touch',
             demo: 'https://www.youtube.com/watch?v=JYbe-mDsMcU',

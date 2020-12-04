@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
-
+import Grid from '@material-ui/core/Grid'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -32,7 +32,16 @@ const useStyles = makeStyles((theme) => ({
       '& > *': {
         margin: theme.spacing(1),
         width: theme.spacing(31),
-        height: theme.spacing(20),
+        height: theme.spacing(20),     
+         breakpoints: {
+          values: {
+            xs: 0,
+            sm: 400,
+            md: 960,
+            lg: 1280,
+            xl: 1920,
+          },
+        },
     },
    }
   }));
@@ -43,6 +52,7 @@ const ProjectCard = ({project}) => {
 return (
     <div id={project.id} style={{marginLeft: '50px'}}>
     <Card className={classes.root}>
+   
       <CardActionArea>
     <div className={classes.media}>
       {project.imgs.map((img, ind)=> <Paper key={ind} elevation={3} style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}/>)}
@@ -78,6 +88,7 @@ return (
    };
 
    export default ProjectCard
+  
 
       
 

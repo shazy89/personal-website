@@ -21,6 +21,15 @@ const drawerWidth = 400;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 400,
+        md: 960,
+        lg: 1280,
+        xl: 1920,
+      },
+    },
  
   },
 
@@ -77,8 +86,9 @@ const useStyles = makeStyles((theme) => ({
        const classes = useStyles();
    return (
        <div className={classes.root} >
+        
          <CssBaseline />
-   
+
               <Drawer
                 className={classes.drawer}
                 variant="permanent"
@@ -105,10 +115,11 @@ const useStyles = makeStyles((theme) => ({
                  <Route  path="/portfolio" component={ Portfolio }/> 
               </Switch>
          </main>
-
+       
        </div>
    )};
    export default SideNav;  
+
              
            
 
