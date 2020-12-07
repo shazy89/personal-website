@@ -11,8 +11,7 @@ const [HomeUnderLine, setHomeUnderLine] = useState(false)
   const [AboutUnderLine, setAboutUnderLine] = useState(false)
 
 const linkSelect = (e) => {
-   setHomeUnderLine(false)
-   setHomeUnderLine(true)
+
     switch(e.target.text) {
         case('Home'): {
             setHomeUnderLine(true)
@@ -52,11 +51,11 @@ return (
       <Button > <Link to={'/'} className={tapography3} 
          style={{textDecoration: HomeUnderLine? 'underline' : null}} onClick={e => linkSelect(e)}>Home</Link></Button>
       <Button> <Link to={'/resume'} className={tapography3} 
-         style={{textDecoration: HomeUnderLine? 'underline' : null}} onClick={e => linkSelect(e)}>Resume</Link> </Button>
+         style={{textDecoration: ResumeUnderLine? 'underline' : null}} onClick={e => linkSelect(e)}>Resume</Link> </Button>
       <Button> <Link to={'/portfolio'} className={tapography3} 
-         style={{textDecoration: HomeUnderLine? 'underline' : null}} onClick={e => linkSelect(e)} >Portfolio</Link> </Button>
+         style={{textDecoration: PortfolioUnderLine? 'underline' : null}} onClick={e => linkSelect(e)} >Portfolio</Link> </Button>
       <Button><Link to={'/about'} className={tapography3} 
-         style={{textDecoration: HomeUnderLine? 'underline' : null}} onClick={e => linkSelect(e)} >About</Link> </Button>
+         style={{textDecoration: AboutUnderLine? 'underline' : null}} onClick={e => linkSelect(e)} >About</Link> </Button>
       
     </Grid>
 </div>
