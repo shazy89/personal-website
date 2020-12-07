@@ -13,33 +13,33 @@ const [HomeUnderLine, setHomeUnderLine] = useState(false)
 const linkSelect = (e) => {
    setHomeUnderLine(false)
    setHomeUnderLine(true)
- //   switch(e.target.text) {
- //       case('Home'): {
- //           setHomeUnderLine(true)
- //           setResumeUnderLine(false)
- //           setPortfolioUnderLine(false)
- //           setAboutUnderLine(false)
- //           break;
- //    } case ('Resume'): {
- //          setHomeUnderLine(false)
- //          setResumeUnderLine(true)
- //          setPortfolioUnderLine(false)
- //          setAboutUnderLine(false)
- //          break;
- //    } case ('Portfolio'): {
- //          setHomeUnderLine(false)
- //          setResumeUnderLine(false)
- //          setPortfolioUnderLine(true)
- //          setAboutUnderLine(false)
- //          break;
- //    } case ('About'): {
- //          setAboutUnderLine(true)
- //          setHomeUnderLine(false)
- //          setResumeUnderLine(false)
- //          setPortfolioUnderLine(false)
- //          break;
- //    }
- // }
+    switch(e.target.text) {
+        case('Home'): {
+            setHomeUnderLine(true)
+            setResumeUnderLine(false)
+            setPortfolioUnderLine(false)
+            setAboutUnderLine(false)
+            break;
+     } case ('Resume'): {
+           setHomeUnderLine(false)
+           setResumeUnderLine(true)
+           setPortfolioUnderLine(false)
+           setAboutUnderLine(false)
+           break;
+     } case ('Portfolio'): {
+           setHomeUnderLine(false)
+           setResumeUnderLine(false)
+           setPortfolioUnderLine(true)
+           setAboutUnderLine(false)
+           break;
+     } case ('About'): {
+           setAboutUnderLine(true)
+           setHomeUnderLine(false)
+           setResumeUnderLine(false)
+           setPortfolioUnderLine(false)
+           break;
+     }
+  }
 }
 return ( 
  <div> 
