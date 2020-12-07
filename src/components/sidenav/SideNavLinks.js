@@ -6,9 +6,9 @@ import Button from '@material-ui/core/Button'
 const SideNavLinks = ({tapography3}) => {
 
 const [HomeUnderLine, setHomeUnderLine] = useState(false)
- // const [ResumeUnderLine, setResumeUnderLine] = useState(false)
- // const [PortfolioUnderLine, setPortfolioUnderLine] = useState(false)
- // const [AboutUnderLine, setAboutUnderLine] = useState(false)
+  const [ResumeUnderLine, setResumeUnderLine] = useState(false)
+  const [PortfolioUnderLine, setPortfolioUnderLine] = useState(false)
+  const [AboutUnderLine, setAboutUnderLine] = useState(false)
 
 const linkSelect = (e) => {
    setHomeUnderLine(false)
