@@ -56,7 +56,19 @@ const useStyles = makeStyles((theme) => ({
     backgroundImage: `url(${backgroundImg})`,
     padding: theme.spacing(3),
   },
-  tapography3: {
+  tapography: {
+    fontStyle: "italic",
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '30px'
+ },
+tapography2: {
+    fontStyle: "italic",
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '10px'
+ },
+tapography3: {
     fontStyle: "italic",
     marginLeft: 'auto',
     marginRight: 'auto',
@@ -71,8 +83,10 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '50%',
     marginLeft: 'auto',
     marginRight: 'auto',
-    marginTop: '20px',
-    borderColor: 'red'
+    marginTop: '50px',
+    borderColor: 'red',
+    display: 'flex'
+
 }
 }));
 
@@ -85,21 +99,26 @@ function SN(props) {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
+  
 
   const drawer = (
     <div>
       <div className={classes.toolbar} />
-       <img src={Img} className={classes.image} alt="Ed Shaziman" />
-      <Typography paragraph variant="h4" className={classes.tapography}> 
-        Erdoan (Ed) Shaziman 
-      </Typography>  
-      
-      <List>
-          <SideNavLinks tapography3={classes.tapography3}/>
-      </List>
+   
+       <List>
+        <img src={Img} className={classes.image} alt="Ed Shaziman" />
+         <Typography paragraph variant="h4" className={classes.tapography}> 
+           Erdoan (Ed) Shaziman 
+         </Typography>  
+    
+             <SideNavLinks tapography3={classes.tapography3}/>
+         </List>
         <Footer />
     </div>
   );
+
+      
+      
 
   const container = window !== undefined ? () => window().document.body : undefined;
 
@@ -135,7 +154,7 @@ function SN(props) {
               paper: classes.drawerPaper,
             }}
             ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
+              keepMounted: true, 
             }}
           >
             {drawer}
@@ -148,7 +167,7 @@ function SN(props) {
             }}
             variant="permanent"
             open
-          >
+          > 
             {drawer}
           </Drawer>
         </Hidden>

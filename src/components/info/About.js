@@ -13,11 +13,11 @@ const defaultProps = {
 
 const About = () => {
  return (
-   <Typography component="div"  >
-      <Box display="flex"  border={0} {...defaultProps} >
-        <Grid container spacing={1}  >
-          <Grid item xs={12} sm={6}>
-           <Box component="span"  fontSize={{ xs: 'h6.fontSize', sm: 'h4.fontSize', md: 'h3.fontSize' }}>
+  
+      <Box border={0} {...defaultProps} >
+        <Grid container spacing={1}  margin='auto' id='1'>
+          <Grid item xs={12} sm={6} id='2' style={{margin: 'auto'}}>
+           <Box component="span"  id='3'   fontSize={{ xs: 'h6.fontSize', sm: 'h4.fontSize', md: 'h3.fontSize' }}>
               <Typography gutterBottom variant="h3" style={{marginLeft: '30px', marginTop: '40px'}} component="h2"> 
                   about me
               </Typography>
@@ -39,7 +39,7 @@ const About = () => {
           </Grid>
         </Grid>
      </Box>
-  </Typography>
+
     )
 }
                     
