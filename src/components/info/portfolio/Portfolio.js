@@ -14,7 +14,7 @@ const Portfolio = () => {
   let portProjects = file.projects.map(proj => <Card key={proj.id} project={proj} />)
   return (
        <div > 
-        <Grid  xs={12} sm={12} md={12} lg={12} xl={12}
+        <Grid 
            container
            direction="column"
            justify="flex-start"

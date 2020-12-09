@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid'
-
+import Hidden from '@material-ui/core/Hidden';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
       flexWrap: 'wrap',
       '& > *': {
         margin: theme.spacing(1),
-        width: theme.spacing(31),
+        width: theme.spacing(30),
         height: theme.spacing(20),     
          breakpoints: {
           values: {
@@ -50,13 +50,18 @@ const ProjectCard = ({project}) => {
     const classes = useStyles();
 
 return (
-    <div id={project.id} style={{marginLeft: '50px'}}>
+  
+   <Grid container className={classes.root} item xs={12} sm={8} md={6} spacing={0}>   
+
     <Card className={classes.root}>
    
       <CardActionArea>
-    <div className={classes.media}>
-      {project.imgs.map((img, ind)=> <Paper key={ind} elevation={3} style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}/>)}
-    </div>
+      <Hidden only={['xs','sm','md']}>
+
+         <div className={classes.media}>
+           {project.imgs.map((img, ind)=> <Paper key={ind} elevation={3} style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}/>)}
+         </div>
+         </Hidden>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
                {project.name}
@@ -83,7 +88,9 @@ return (
         </Button> : null}
       </CardActions>
     </Card>
-    </div>
+   
+    </Grid>
+
    )
    };
 
