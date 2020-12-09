@@ -6,20 +6,23 @@ import Divider from '@material-ui/core/Divider';
 import Drawer from '@material-ui/core/Drawer';
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+import Notfound from '../NotFound';
 import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import MailIcon from '@material-ui/icons/Mail';
+import Home from '../info/Home'
+import Resume from '../info/Resume'
+import About from '../info/About'
+import Portfolio from '../info/portfolio/Portfolio'
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SideNavLinks from './SideNavLinks'
+import Footer from './Footer'
+import Img from '../../assets/images/IMG_7527.png' 
+import backgroundImg from '../../assets/images/img7.png'
 
-const drawerWidth = 400;
+const drawerWidth = 350;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   drawer: {
     [theme.breakpoints.up('sm')]: {
       width: drawerWidth,
-      flexShrink: 0,
+      flexShrink: 1,
     },
   },
   appBar: {
@@ -50,8 +53,27 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     flexGrow: 1,
+    backgroundImage: `url(${backgroundImg})`,
     padding: theme.spacing(3),
   },
+  tapography3: {
+    fontStyle: "italic",
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '20px',
+    textDecoration: 'none',
+    fontSize: '20px',
+    color: 'black',
+    cursor: 'pointer'
+  },
+  image: {
+    width: '35%',  
+    borderRadius: '50%',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    marginTop: '20px',
+    borderColor: 'red'
+}
 }));
 
 function SN(props) {
@@ -67,15 +89,15 @@ function SN(props) {
   const drawer = (
     <div>
       <div className={classes.toolbar} />
-      <Divider />
+       <img src={Img} className={classes.image} alt="Ed Shaziman" />
+      <Typography paragraph variant="h4" className={classes.tapography}> 
+        Erdoan (Ed) Shaziman 
+      </Typography>  
+      
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItem>
-        ))}
+          <SideNavLinks tapography3={classes.tapography3}/>
       </List>
+        <Footer />
     </div>
   );
 
@@ -133,7 +155,13 @@ function SN(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-
+        <Switch>
+           <Route  exact path="/" component={Home} />
+           <Route  path="/resume" component={ Resume }/> 
+           <Route  path="/about" component={ About }/> 
+           <Route  path="/portfolio" component={ Portfolio }/> 
+           <Route component={Notfound} />
+        </Switch>
       </main>
     </div>
   );
