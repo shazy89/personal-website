@@ -18,7 +18,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SideNavLinks from './SideNavLinks'
 import Footer from './Footer'
-import Img from '../../assets/images/IMG_7527.png' 
+import Img from '../../assets/images/IMG_7527.jpg' 
 import backgroundImg from '../../assets/images/img7.png'
 
 const drawerWidth = 350;

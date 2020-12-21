@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid';
 
 const defaultProps = {
     m: 1,
-    style: { width: '100%', height: '53rem' },
+    style: { width: '100%', height: '50rem' },
     borderColor: 'text.primary',
     fontStyle: "italic",
     
