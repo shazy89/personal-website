@@ -18,8 +18,8 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SideNavLinks from './SideNavLinks'
 import Footer from './Footer'
-import Img from '../../assets/images/IMG_7527.jpg' 
 import backgroundImg from '../../assets/images/img7.png'
+
 
 const drawerWidth = 350;
 
@@ -103,18 +103,18 @@ function SN(props) {
   const drawer = (
     <div>
       <div className={classes.toolbar} />
-   
-       <List>
-        <img src={Img} className={classes.image} alt="Ed Shaziman" />
-         <Typography paragraph variant="h4" className={classes.tapography}> 
-           Erdoan (Ed) Shaziman 
-         </Typography>  
-    
-             <SideNavLinks tapography3={classes.tapography3}/>
+         <List>
+          <img src='https://res.cloudinary.com/dytheecsk/image/upload/v1608566175/portfolio/IMG_7527_ljzwlv.jpg' className={classes.image} alt="Ed Shaziman" />
+           <Typography paragraph variant="h4" className={classes.tapography}> 
+             Erdoan (Ed) Shaziman 
+           </Typography>  
+               <SideNavLinks tapography3={classes.tapography3}/>
          </List>
-        <Footer />
+      <Footer />
     </div>
   );
+   
+    
 
       
       

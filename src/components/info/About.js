@@ -19,7 +19,7 @@ const About = () => {
           <Grid item xs={12} sm={6} id='2' style={{margin: 'auto'}}>
            <Box component="span"  id='3'   fontSize={{ xs: 'h6.fontSize', sm: 'h4.fontSize', md: 'h3.fontSize' }}>
               <Typography gutterBottom variant="h3" style={{marginLeft: '30px', marginTop: '40px'}} component="h2"> 
-                  about me
+                  About me
               </Typography>
               <Typography gutterBottom variant="h4" style={{marginTop: '40px'}}  color="textSecondary" component="h2"> 
                  I am a FULL STACK WEB-DEVELOPER <br />
