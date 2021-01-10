@@ -9,6 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid'
 import Hidden from '@material-ui/core/Hidden';
+import Box from '@material-ui/core/Box';
+import { width } from '@material-ui/system';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -49,6 +51,14 @@ const useStyles = makeStyles((theme) => ({
 const ProjectCard = ({project}) => {
     const classes = useStyles();
 
+    const projectBox = project.imgs.map((img, ind)=> {
+       return ( 
+       <Paper square key={ind} elevation={3} >
+         <img src={`${img}`} style={{width: '100%', height: '100%'}}/>
+       </Paper>  
+       )
+  })
+
 return (
   
    <Grid container className={classes.root} item xs={12} sm={8} md={6} spacing={0}>   
@@ -59,7 +69,7 @@ return (
       <Hidden only={['xs','sm','md']}>
 
          <div className={classes.media}>
-           {project.imgs.map((img, ind)=> <Paper key={ind} elevation={3} style={{backgroundImage:`url(${img})`, backgroundSize: 'cover'}}/>)}
+           {projectBox}
          </div>
          </Hidden>
         <CardContent>
