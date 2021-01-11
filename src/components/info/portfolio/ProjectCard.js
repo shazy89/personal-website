@@ -22,9 +22,7 @@ const ProjectCard = ({project}) => {
       );
  });
 
-
-return (
-  
+ return (
    <Grid container className={classes.root} item xs={12} sm={8} md={6} spacing={0}>   
     <Card className={classes.root}>
       <CardActionArea>
@@ -43,7 +41,9 @@ return (
     </Card>
  </Grid>
  ) 
-};
+ };
+
+  
 
  const useStyles = makeStyles((theme) => ({
   root: {
@@ -81,7 +81,7 @@ return (
  }
 }));
 
-   export default ProjectCard
+   export default ProjectCard;
           
 
 

@@ -26,7 +26,7 @@ module.exports = {
             demoMob: 'https://www.youtube.com/watch?v=dZjlMhitkwc&list=PL0zbnzgKNis1xNPhk3jmGx_KhQgK1SzaS&index=10&t=85s',
             info:   `Single Page Car rental app with customizable dates for customers. 
                      Admin has the ability to upload images for new car postings, manage current listings, and review booking metrics reports.`,
-            technologies: 'Javascript, React, React Native, Expo, Redux, Thunk, Ruby on Rails, PostgreSQL, Heroku, HTML, CSS, Cloudinary',
+            technologies: 'Javascript, React, React Native, Expo, Redux, Thunk, Ruby on Rails, PostgreSQL, Axios, Heroku, HTML, CSS, Cloudinary',
             imgs: ['https://res.cloudinary.com/dytheecsk/image/upload/v1610213769/Screen_Shot_2021-01-09_at_12.35.15_PM_zxwj2y.png', 
                    'https://res.cloudinary.com/dytheecsk/image/upload/v1605120202/portfolio/rm2_a8rfve.png',
                     'https://res.cloudinary.com/dytheecsk/image/upload/v1605120194/portfolio/rm1_dpkrja.png']

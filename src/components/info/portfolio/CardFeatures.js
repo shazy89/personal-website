@@ -8,13 +8,13 @@ const CardFeatures = ({project}) => {
             <a href={project.github} target="_blank" rel="noreferrer"> Github: Web App </a>
           </Button>
           {project.mobGithub? ( <Button size="small" color="primary">
-            <a href={project.github} target="_blank" rel="noreferrer"> Github: Mobile App </a>
+            <a href={project.mobGithub} target="_blank" rel="noreferrer"> Github: Mobile App </a>
           </Button>) : null }
           <Button size="small" color="primary">
              <a href={project.demo} target="_blank" rel="noreferrer"> Demo </a>
           </Button>
           {project.demoMob ? (<Button size="small" color="primary">
-             <a href={project.demo} target="_blank" rel="noreferrer"> Demo Mobile App</a>
+             <a href={project.demoMob} target="_blank" rel="noreferrer"> Demo Mobile App</a>
           </Button>) : null }
         </div>
       );
