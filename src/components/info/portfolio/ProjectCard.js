@@ -9,8 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid'
 import Hidden from '@material-ui/core/Hidden';
-import Box from '@material-ui/core/Box';
-import { width } from '@material-ui/system';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -62,12 +61,9 @@ const ProjectCard = ({project}) => {
 return (
   
    <Grid container className={classes.root} item xs={12} sm={8} md={6} spacing={0}>   
-
     <Card className={classes.root}>
-   
       <CardActionArea>
       <Hidden only={['xs','sm','md']}>
-
          <div className={classes.media}>
            {projectBox}
          </div>
@@ -76,7 +72,6 @@ return (
           <Typography gutterBottom variant="h5" component="h2">
                {project.name}
           </Typography>
-          
           <Typography variant="body2" color="textSecondary" component="p">
                {project.info}
           </Typography> <br />
@@ -98,13 +93,16 @@ return (
         </Button> : null}
       </CardActions>
     </Card>
+ </Grid>
+
    
-    </Grid>
+
 
    )
    };
 
    export default ProjectCard
+          
   
 
       
