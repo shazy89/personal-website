@@ -21,6 +21,107 @@ import Footer from './Footer'
 import backgroundImg from '../../assets/images/img7.png'
 
 
+function SN(props) {
+  const { window } = props;
+  const classes = useStyles();
+  const theme = useTheme();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
+  };
+  
+  const drawer = (
+    <div>
+      <div className={classes.toolbar} />
+         <List>
+          <img src='https://res.cloudinary.com/dytheecsk/image/upload/v1608566175/portfolio/IMG_7527_ljzwlv.jpg' className={classes.image} alt="Ed Shaziman" />
+           <Typography paragraph variant="h4" className={classes.tapography}> 
+             Erdoan (Ed) Shaziman 
+           </Typography>  
+               <SideNavLinks tapography3={classes.tapography3}/>
+         </List>
+      <Footer />
+    </div>
+  );
+
+  const container = window !== undefined ? () => window().document.body : undefined;
+   
+  return (
+    <div className={classes.root}>
+      <CssBaseline />
+      <AppBar position="fixed" className={classes.appBar}>
+        <Toolbar style={{backgroundColor: 'grey'}}>
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            className={classes.menuButton}
+          >
+            <MenuIcon />
+          </IconButton>
+        </Toolbar>
+      </AppBar>
+      <nav className={classes.drawer} aria-label="mailbox folders">
+        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+        <Hidden smUp implementation="css">
+          <Drawer
+            container={container}
+            variant="temporary"
+            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
+            open={mobileOpen}
+            onClose={handleDrawerToggle}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            ModalProps={{
+              keepMounted: true, 
+            }}
+          >
+            {drawer}
+          </Drawer>
+        </Hidden>
+        <Hidden xsDown implementation="css">
+          <Drawer
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            variant="permanent"
+            open
+          > 
+            {drawer}
+          </Drawer>
+        </Hidden>
+      </nav>
+      <main className={classes.content}>
+        <div className={classes.toolbar} />
+        <Switch>
+           <Route  exact path="/" component={Home} />
+           <Route  path="/resume" component={ Resume }/> 
+           <Route  path="/about" component={ About }/> 
+           <Route  path="/portfolio" component={ Portfolio }/> 
+           <Route component={Notfound} />
+        </Switch>
+      </main>
+    </div>
+  );
+}
+
+
+SN.propTypes = {
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
+    
+
+      
+      
+
+
 const drawerWidth = 350;
 
 const useStyles = makeStyles((theme) => ({
@@ -88,106 +189,5 @@ tapography3: {
 
 }
 }));
-
-function SN(props) {
-  const { window } = props;
-  const classes = useStyles();
-  const theme = useTheme();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-  
-
-  const drawer = (
-    <div>
-      <div className={classes.toolbar} />
-         <List>
-          <img src='https://res.cloudinary.com/dytheecsk/image/upload/v1608566175/portfolio/IMG_7527_ljzwlv.jpg' className={classes.image} alt="Ed Shaziman" />
-           <Typography paragraph variant="h4" className={classes.tapography}> 
-             Erdoan (Ed) Shaziman 
-           </Typography>  
-               <SideNavLinks tapography3={classes.tapography3}/>
-         </List>
-      <Footer />
-    </div>
-  );
-   
-    
-
-      
-      
-
-  const container = window !== undefined ? () => window().document.body : undefined;
-
-  return (
-    <div className={classes.root}>
-      <CssBaseline />
-      <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar style={{backgroundColor: 'grey'}}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            className={classes.menuButton}
-          >
-            <MenuIcon />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-      <nav className={classes.drawer} aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Hidden smUp implementation="css">
-          <Drawer
-            container={container}
-            variant="temporary"
-            anchor={theme.direction === 'rtl' ? 'right' : 'left'}
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            ModalProps={{
-              keepMounted: true, 
-            }}
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-        <Hidden xsDown implementation="css">
-          <Drawer
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            variant="permanent"
-            open
-          > 
-            {drawer}
-          </Drawer>
-        </Hidden>
-      </nav>
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-        <Switch>
-           <Route  exact path="/" component={Home} />
-           <Route  path="/resume" component={ Resume }/> 
-           <Route  path="/about" component={ About }/> 
-           <Route  path="/portfolio" component={ Portfolio }/> 
-           <Route component={Notfound} />
-        </Switch>
-      </main>
-    </div>
-  );
-}
-
-SN.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window: PropTypes.func,
-};
 
 export default SN;

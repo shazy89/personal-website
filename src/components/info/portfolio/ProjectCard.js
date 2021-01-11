@@ -4,47 +4,12 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 import Hidden from '@material-ui/core/Hidden';
 import Paper from '@material-ui/core/Paper';
-import Features from './Features';
+import CardFeatures from './CardFeatures';
+import Content from './Content'
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      maxWidth: 800,
-      flexWrap: 'wrap',
-      margin: '5px',
-      breakpoints: {
-        values: {
-          xs: 0,
-          sm: 400,
-          md: 960,
-          lg: 1280,
-          xl: 1920,
-        },
-      },
-    },
-    media: {
-      height: 200,
-      display: 'flex',
-      flexWrap: 'wrap',
-      '& > *': {
-        margin: theme.spacing(1),
-        width: theme.spacing(30),
-        height: theme.spacing(20),     
-         breakpoints: {
-          values: {
-            xs: 0,
-            sm: 400,
-            md: 960,
-            lg: 1280,
-            xl: 1920,
-          },
-        },
-    },
-   }
-  }));
 
 const ProjectCard = ({project}) => {
     const classes = useStyles();
@@ -69,24 +34,52 @@ return (
          </div>
          </Hidden>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-               {project.name}
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-               {project.info}
-          </Typography> <br />
-          <Typography variant="body2" color="textSecondary" component="p">
-               {project.technologies}
-          </Typography>
+          <Content  project={project}/>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Features project={project} />
+        <CardFeatures project={project} />
       </CardActions>
     </Card>
  </Grid>
+ ) 
+};
 
- ) };
+ const useStyles = makeStyles((theme) => ({
+  root: {
+    maxWidth: 800,
+    flexWrap: 'wrap',
+    margin: '5px',
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 400,
+        md: 960,
+        lg: 1280,
+        xl: 1920,
+      },
+    },
+  },
+  media: {
+    height: 200,
+    display: 'flex',
+    flexWrap: 'wrap',
+    '& > *': {
+      margin: theme.spacing(1),
+      width: theme.spacing(30),
+      height: theme.spacing(20),     
+       breakpoints: {
+        values: {
+          xs: 0,
+          sm: 400,
+          md: 960,
+          lg: 1280,
+          xl: 1920,
+        },
+      },
+  },
+ }
+}));
 
    export default ProjectCard
           
