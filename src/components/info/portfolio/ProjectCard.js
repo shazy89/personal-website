@@ -6,10 +6,9 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid'
 import Hidden from '@material-ui/core/Hidden';
-
+import Paper from '@material-ui/core/Paper';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -51,12 +50,13 @@ const ProjectCard = ({project}) => {
     const classes = useStyles();
 
     const projectBox = project.imgs.map((img, ind)=> {
-       return ( 
-       <Paper square key={ind} elevation={3} >
-         <img src={`${img}`} style={{width: '100%', height: '100%'}}/>
-       </Paper>  
-       )
-  })
+      return ( 
+      <Paper square key={ind} elevation={3} >
+        <img alt='' src={`${img}`} style={{width: '100%', height: '100%'}}/>
+      </Paper>  
+      );
+ });
+
 
 return (
   
@@ -81,29 +81,20 @@ return (
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-         <a href={project.github} target="_blank" rel="noreferrer"> Github</a>
-        </Button>
-        <Button size="small" color="primary">
-        <a href={project.demo} target="_blank" rel="noreferrer"> Demo</a>
-        </Button>
-        { project.webApp ?
-        <Button size="small" color="primary">
-        <a href={project.webApp} target="_blank" rel="noreferrer"> live app</a>
-        </Button> : null}
+
+
       </CardActions>
     </Card>
  </Grid>
 
-   
-
-
-   )
-   };
+   ) };
 
    export default ProjectCard
           
-  
+ // { project.webApp ?
+ //  <Button size="small" color="primary">
+ //  <a href={project.webApp} target="_blank" rel="noreferrer"> live app</a>
+ //  </Button> : null}
 
       
 
