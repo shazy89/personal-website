@@ -23,6 +23,9 @@
     &__logo {
         height: 28.5rem;
         border-radius: 50%;
+        @include respond(tab-port) { 
+            height: 18rem; 
+        }
      
     }
 }

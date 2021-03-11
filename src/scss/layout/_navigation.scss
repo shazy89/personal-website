@@ -1,41 +1,48 @@
 .navigation {
+  &__nav {
+    position: relative;
 
-
-    &__nav {
-     position: relative;
-        @include clearfix;
-        z-index: 1500;
-    }
-    &__list {
-    float: right;
+    z-index: 1500;
+  }
+  &__list {
+    display: flex;
     list-style: none;
+    justify-content: flex-end;
+  }
+  &__link {
+    &:link,
+    &:visited {
+      display: inline-block;
+      margin-left: 8rem;
+      text-decoration: none;
+      font-size: 3rem;
+      font-weight: 300;
+      color: rgb(27, 27, 27);
+      padding: 0.5rem 1rem;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 50%,
+        $color-black 50%
+      );
+      background-size: 230%;
+      transition: all 0.4s;
+      border-radius: 10%;
+      @include respond(tab-port) { 
+        font-size: 2rem; 
+    }
+    }
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      transform: translateX(1rem);
+      color: $color-white;
 
     }
-    &__link {
-        &:link,
-        &:visited {
-        display: inline-block;
-        margin-left: 8rem;
-        text-decoration: none;
-        font-size: 3rem;
-        font-weight: 300;
-        color: rgb(27, 27, 27);
-        padding: .5rem 1rem;
-        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-        background-size: 220%;
-        transition: all .4s;
-        }
-
-        &:hover,
-        &:active {
-            background-position: 100%;
-            transform: translateX(1rem);
-
-      
-        }
-    }
-    &__item {
-        margin: 1rem;
-        float: right;
-    }
+  }
+  &__item {
+    margin: 1rem;
+  
+  }
 }
