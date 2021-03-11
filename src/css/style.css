@@ -12,7 +12,8 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem;
-  font-family: 'Lato', 'Arial', sans-serif; }
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 400; }
 
 .row {
   max-width: 114rem;
@@ -53,6 +54,14 @@ body {
     width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem); }
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(119, 119, 119, 0.8)), url("../assets/images/portfolio/laptop-1.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%); }
 
 .library {
   color: #c07171;
