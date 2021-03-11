@@ -1,17 +1,14 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import SN from './components/sidenav/SN'
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import SN from "./components/sidenav/SN";
 
 function App() {
   return (
-    <div >
+    <div>
       <Router>
-         <SN />
+        <SN />
       </Router>
     </div>
-  )};
-  export default App;
-
-
-       
-
+  );
+}
+export default App;
