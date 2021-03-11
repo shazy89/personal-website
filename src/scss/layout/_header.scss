@@ -1,54 +1,68 @@
 .header {
-    height: 90vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-light-grey, 0.5),
-        rgba($color-dark-grey, 0.5)), url("../assets/images/portfolio/laptop-1.jpg");
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    z-index: -1;
-    clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
-   // display: flex;
-   // justify-content: flex-start;
-   // align-items: flex-end;
+  height: 90vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-light-grey, 0.5),
+      rgba($color-dark-grey, 0.5)
+    ),
+    url("../assets/images/portfolio/laptop-1.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
+  clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: flex-end;
 
-    &__logo-box {
-        position: absolute;
-        top: 1rem;
-        left: 8rem;
-        z-index: 9999;
-        
-        border-radius:50%;
-       
-        
+  &__logo-box {
+    position: absolute;
+    top: 1rem;
+    left: 8rem;
+    z-index: 9999;
+
+    border-radius: 50%;
+  }
+
+  &__logo {
+    height: 28.5rem;
+    border-radius: 50%;
+    @include respond(tab-port) {
+      height: 18rem;
+    }
+  }
+  // Social media Icons
+  &__socialmedia-icons {
+    backface-visibility: hidden;
+    display: flex;
+    position: absolute;
+    top: 93%;
+    left: 76%;
+    transform: translate(-50%, -50%);
+    animation: bounceOutUp 3s ease-in .5s;
+    box-shadow: 4rem 5.5rem 2rem -1rem  rgba(66, 66, 66, 0.37);
+    
+
+   
+  }
+
+  &__socialmedia-link {
+    &:link,
+    &:visited {
+      height: 4rem;
+      color: $color-black;
+      transition: all 0.4s;
+
+      &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+      }
     }
 
-    &__logo {
-        height: 28.5rem;
-        border-radius: 50%;
-        @include respond(tab-port) { 
-            height: 18rem; 
-        }
-     
-    }
-    // Social media Icons
-    &__socialmedia-icons {
-        display: flex;
-        position: absolute;
-        top: 93%;
-        left: 76%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
+    &:hover,
+    &:active {
+      transform: rotate(32deg) scale(1.3);
 
-    &__socialmedia-link {
-        height: 4rem;
-        color: $color-black;
-
-        &:not(:last-child) {
-            margin-right: $gutter-horizontal;
-        }
     }
-
+  }
 }

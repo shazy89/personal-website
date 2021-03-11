@@ -12,7 +12,7 @@ const Icons = () => {
         className="header__socialmedia-link"
         href="mailto:erdo.shazy123@gmail.com"
       >
-        <EmailIcon style={{ fontSize: "4rem" }} />
+        <EmailIcon style={{ fontSize: "4.3rem" }} />
       </a>
       <a
         className="header__socialmedia-link"
@@ -20,7 +20,7 @@ const Icons = () => {
         rel="noreferrer"
         href="https://github.com/shazy89"
       >
-        <GitHubIcon style={{ fontSize: "4rem" }} />
+        <GitHubIcon style={{ fontSize: "4.3rem" }} />
       </a>
       <a
         className="header__socialmedia-link"
@@ -28,7 +28,7 @@ const Icons = () => {
         rel="noreferrer"
         href="https://www.linkedin.com/in/erdoan-ed-shaziman-0533611b9/"
       >
-        <LinkedInIcon style={{ fontSize: "4rem" }} />
+        <LinkedInIcon style={{ fontSize: "4.3rem" }} />
       </a>
       <a
         className="header__socialmedia-link"
@@ -36,7 +36,7 @@ const Icons = () => {
         rel="noreferrer"
         href="https://www.facebook.com/shazys"
       >
-        <FacebookIcon style={{ fontSize: "4rem" }} />
+        <FacebookIcon style={{ fontSize: "4.3rem" }} />
       </a>
       <a
         className="header__socialmedia-link"
@@ -44,7 +44,7 @@ const Icons = () => {
         rel="noreferrer"
         href="https://www.instagram.com/shazyoh/"
       >
-        <InstagramIcon style={{ fontSize: "4rem" }} />
+        <InstagramIcon style={{ fontSize: "4.3rem" }} />
       </a>
     </div>
   );
