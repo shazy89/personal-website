@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap");
 *,
 *::after,
 *::before {
@@ -10,7 +11,8 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem; }
+  padding: 3rem;
+  font-family: 'Lato', 'Arial', sans-serif; }
 
 .library {
   color: #c07171;
