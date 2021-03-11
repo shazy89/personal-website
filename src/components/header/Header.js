@@ -5,7 +5,9 @@ const Header = () => {
   return (
     <>
       <Logo />
-      <header className="header"></header>
+      <header className="header">
+        <div className="header__socialmedia-icons"></div>
+      </header>
     </>
   );
 };

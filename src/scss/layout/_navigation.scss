@@ -1,4 +1,7 @@
 .navigation {
+    transform: translatey(4.4rem) rotate(
+        -4deg
+        );
   &__nav {
     position: relative;
 
@@ -15,7 +18,7 @@
       display: inline-block;
       margin-left: 8rem;
       text-decoration: none;
-      font-size: 3rem;
+      font-size: 3.3rem;
       font-weight: 300;
       color: rgb(27, 27, 27);
       padding: 0.5rem 1rem;
