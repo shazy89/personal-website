@@ -1,7 +1,13 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Header = () => {
-  return <header className="header">I'm The Header</header>;
+  return (
+    <>
+      <Logo />
+      <header className="header"></header>
+    </>
+  );
 };
 
 export default Header;

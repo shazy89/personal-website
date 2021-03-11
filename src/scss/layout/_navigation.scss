@@ -1,0 +1,41 @@
+.navigation {
+
+
+    &__nav {
+     position: relative;
+        @include clearfix;
+        z-index: 1500;
+    }
+    &__list {
+    float: right;
+    list-style: none;
+
+    }
+    &__link {
+        &:link,
+        &:visited {
+        display: inline-block;
+        margin-left: 8rem;
+        text-decoration: none;
+        font-size: 3rem;
+        font-weight: 300;
+        color: rgb(27, 27, 27);
+        padding: .5rem 1rem;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+        background-size: 220%;
+        transition: all .4s;
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            transform: translateX(1rem);
+
+      
+        }
+    }
+    &__item {
+        margin: 1rem;
+        float: right;
+    }
+}

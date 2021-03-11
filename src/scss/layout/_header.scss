@@ -2,11 +2,27 @@
     height: 95vh;
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-light-grey, 0.8),
-        rgba($color-dark-grey, 0.8)), url("../assets/images/portfolio/laptop-1.jpg");
+        rgba($color-light-grey, 0.5),
+        rgba($color-dark-grey, 0.5)), url("../assets/images/portfolio/laptop-1.jpg");
     background-size: cover;
     background-position: top;
     position: relative;
-
+    z-index: -1;
     clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 1rem;
+        left: 8rem;
+        z-index: 9999;
+        
+        border-radius:50%;
+       
+        
+    }
+    &__logo {
+        height: 28.5rem;
+        border-radius: 50%;
+     
+    }
 }
