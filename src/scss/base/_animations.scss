@@ -49,16 +49,19 @@
   
     40%, 45% {
       opacity: 1;
-      transform: translate(-50%, -2rem);
+      transform: rotate(19deg) scale(1.1);
       box-shadow: 4rem 5.5rem 2rem -1rem  rgba(66, 66, 66, 0.37);
     }
+     
   
     50% {
         transform: translate(-50%, -20rem);
+ 
         box-shadow: 4rem 20.5rem 2rem -1rem  rgba(66, 66, 66, 0.15);
     }
     60% {
         transform: translate(-50%, -2rem);
+        
         box-shadow: 4rem 5.5rem 2rem -1rem  rgba(66, 66, 66, 0.3);
     }
     70% {
@@ -67,7 +70,8 @@
     }
     80% {
         transform: translate(-50%, -2rem);
-        box-shadow: 4rem 5.5rem 2rem -1rem  rgba(66, 66, 66, 0.3);
+    
+        box-shadow: 4rem 5.5rem 2rem -1rem  rgba(66, 66, 66, 0.26);
     }
     90% {
         transform: translate(-50%, -10rem);
@@ -75,10 +79,11 @@
     }
     95% {
         transform: translate(-50%, -5rem);
-        box-shadow: 4rem 8rem 2rem -1rem  rgba(66, 66, 66, 0.32);
+        box-shadow: 4rem 8rem 2rem -1rem  rgba(66, 66, 66, 0.28);
     }
     100% {
         transform: translate(-50%, -2rem);
-        box-shadow: 4rem 5.5rem 2rem -1rem  rgba(66, 66, 66, 0.37);
+    
+        box-shadow: 4rem 5.5rem 2rem -1rem  rgba(66, 66, 66, 0.27);
     }
   }
