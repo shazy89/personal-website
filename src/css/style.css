@@ -83,6 +83,13 @@ body {
     @media only screen and (max-width: 56.25em) {
       .header__logo {
         height: 18rem; } }
+  .header__socialmedia-icons {
+    display: flex; }
+  .header__socialmedia-link {
+    height: 4rem;
+    color: #1d1d1d; }
+    .header__socialmedia-link:not(:last-child) {
+      margin-right: 6rem; }
 
 .navigation {
   transform: translatey(4.4rem) rotate(-4deg); }

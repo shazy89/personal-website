@@ -20,6 +20,7 @@
        
         
     }
+
     &__logo {
         height: 28.5rem;
         border-radius: 50%;
@@ -28,4 +29,19 @@
         }
      
     }
+    // Social media Icons
+    &__socialmedia-icons {
+        display: flex;
+        
+    }
+
+    &__socialmedia-link {
+        height: 4rem;
+        color: $color-black;
+
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+    }
+
 }
