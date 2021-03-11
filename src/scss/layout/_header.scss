@@ -9,6 +9,9 @@
     position: relative;
     z-index: -1;
     clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
+   // display: flex;
+   // justify-content: flex-start;
+   // align-items: flex-end;
 
     &__logo-box {
         position: absolute;
@@ -32,7 +35,11 @@
     // Social media Icons
     &__socialmedia-icons {
         display: flex;
-        
+        position: absolute;
+        top: 93%;
+        left: 76%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
     &__socialmedia-link {

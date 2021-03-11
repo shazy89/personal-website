@@ -84,7 +84,12 @@ body {
       .header__logo {
         height: 18rem; } }
   .header__socialmedia-icons {
-    display: flex; }
+    display: flex;
+    position: absolute;
+    top: 93%;
+    left: 76%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
   .header__socialmedia-link {
     height: 4rem;
     color: #1d1d1d; }
