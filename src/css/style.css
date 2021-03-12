@@ -291,3 +291,7 @@ body {
     color: whitesmoke; }
   .navigation__item {
     margin: 1rem; }
+
+.section-portfolio {
+  position: relative;
+  padding: 15rem 0; }
