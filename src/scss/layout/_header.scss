@@ -31,6 +31,10 @@
   &__logo {
     height: 28.5rem;
     border-radius: 50%;
+    transition: all .3s;
+    &:hover {
+        transform: translate(2rem, 1rem) rotate(-10deg);
+    }
     @include respond(tab-port) {
       height: 18rem;
     }

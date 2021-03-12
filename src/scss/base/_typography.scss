@@ -25,6 +25,7 @@ body {
       letter-spacing: 2.2rem;
       -webkit-animation: leftToRight 2s ease-in 3s;
               animation: leftToRight 2s ease-in 3s;
+         
     &-1 {
         opacity: 1;
     }    
@@ -35,9 +36,13 @@ body {
       font-weight: 700;
       letter-spacing: 1.2rem;
       opacity: 0;
-      transition: all 1s;
+      -webkit-animation: show 1.6s ease 4.5s;
+              animation: show 1.6s ease 4.5s;
+
       &-2 {
         opacity: 1;
+
     }
   }
+
 }

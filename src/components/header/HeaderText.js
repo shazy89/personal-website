@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const HeaderText = () => {
   const [isVisible, setIsVisible] = useState("");
-  const [visible, setVisible] = useState("heading-text__second-2");
+  const [visible, setVisible] = useState("");
   return (
     <div
       className="heading-text__box"
@@ -16,7 +16,10 @@ const HeaderText = () => {
         >
           HEY! I'm Ed
         </span>
-        <span className={`heading-text__second ${visible}`}>
+        <span
+          className={`heading-text__second ${visible}`}
+          onAnimationEnd={(e) => setVisible("heading-text__second-2")}
+        >
           {" "}
           I am a FULL STACK WEB DEVELOPER{" "}
         </span>
