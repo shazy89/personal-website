@@ -17,9 +17,7 @@ const Icons = () => {
     <div className="header__socialmedia-icons">
       <a
         onClick={triggerAnimation}
-        className={`header__socialmedia-link ${
-          trigger ? "triger-animation" : ""
-        }`}
+        className={`header__socialmedia-link ${trigger && "triger-animation"}`}
         href="mailto:erdo.shazy123@gmail.com"
         onAnimationEnd={onAnimationEnd}
         onAnimationStart={onAnimationStart}
