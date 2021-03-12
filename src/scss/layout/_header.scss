@@ -12,6 +12,9 @@
   z-index: -1;
   -webkit-clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
   clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
+  filter: hue-rotate(
+    299deg
+    );
   // display: flex;
   // justify-content: flex-start;
   // align-items: flex-end;
