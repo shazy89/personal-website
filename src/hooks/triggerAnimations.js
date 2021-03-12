@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 export default () => {
   const [trigger, setTriger] = useState(false);
-  const [anim, setAnim] = useState("");
   const [animations, setAnimations] = useState({
     animationFinished: true,
     showAnimationStartLabel: false,
@@ -20,6 +20,7 @@ export default () => {
       animationFinished: true,
       showAnimationStartLabel: false,
     });
+    setTriger(false);
   };
   return [triggerAnimation, onAnimationStart, onAnimationEnd, trigger];
 };
