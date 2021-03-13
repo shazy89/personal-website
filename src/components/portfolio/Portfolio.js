@@ -1,9 +1,9 @@
 import React from "react";
-import video from "../../assets/images/portfolio/coding.mp4";
+//import video from "../../assets/images/portfolio/coding.mp4";
 import video1 from "../../assets/images/portfolio/Coding_technology.mp4";
 const Portfolio = () => {
   return (
-    <section className="section-portfolio">
+    <section className="section-portfolio u-margin-top-huge">
       <div class="bg-video">
         <video class="bg-video__content" autoPlay muted loop>
           <source src={video1} type="video/mp4" />
