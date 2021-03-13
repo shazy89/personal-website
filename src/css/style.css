@@ -10,7 +10,19 @@
   .card__heading {
     height: 26rem;
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    background-color: red; }
+    background-image: linear-gradient(to left bottom, #ff84ca41, #e2e2e2, #c2c2c2); }
+    .card__heading__text {
+      font-size: 2.7rem;
+      font-weight: 300;
+      text-align: right;
+      position: absolute;
+      top: 18rem;
+      right: 3.5rem; }
+      .card__heading__text__span {
+        padding: 1rem 1.5rem;
+        background-image: linear-gradient(to right top, #555555, #707070, #8c8c8c, #aaaaaa, #c8c8c8);
+        box-decoration-break: clone;
+        color: #e2e2e2; }
 
 .bg-video {
   position: absolute;
