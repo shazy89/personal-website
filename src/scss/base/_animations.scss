@@ -90,7 +90,7 @@
   @keyframes leftToRight {
     0% {
         opacity: 0;
-        transform: translateX(-50rem);
+        transform: translateX(-20rem);
        // box-shadow:   2rem 47.5rem 2rem 1rem  rgba(66, 66, 66, 0.35);
     }
     100% {
@@ -98,37 +98,14 @@
         transform: translateX(0);
     }
   }
-  @keyframes show {
+  @keyframes rightToleft {
     0% {
-        opacity: 0;
-        
-       }
-    20% {         
-        opacity: 1;
-        transform: scale(1);
-    }
-    35% {         
-        opacity: 1;
-        transform: scale(1.3);
-    }
-    50% {         
-        opacity: 1;
-        transform: scale(1);
-    }
-    65% {         
-        opacity: 1;
-        transform: scale(1.3);
-    }
-    75% {         
-        opacity: 1;
-        transform: scale(.7);
-    }
-    90% {         
-        opacity: 1;
-        transform: scale(1.3);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+      opacity: 0;
+      transform: translateX(20rem);
+     // box-shadow:   2rem 47.5rem 2rem 1rem  rgba(66, 66, 66, 0.35);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
   }

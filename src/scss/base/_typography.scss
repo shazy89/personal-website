@@ -23,8 +23,8 @@ body {
       font-size: 6rem;
       font-weight: 400;
       letter-spacing: 2.2rem;
-      -webkit-animation: leftToRight 2s ease-in 3s;
-              animation: leftToRight 2s ease-in 3s;
+      -webkit-animation: leftToRight 2s ease-in 2.3s;
+              animation: leftToRight 2s ease-in 2.3s;
          
     &-1 {
         opacity: 1;
@@ -36,8 +36,8 @@ body {
       font-weight: 700;
       letter-spacing: 1.2rem;
       opacity: 0;
-      -webkit-animation: show 1.6s ease 4.5s;
-              animation: show 1.6s ease 4.5s;
+      -webkit-animation: rightToleft 2s ease-in 2.3s;
+              animation: rightToleft 2s ease-in 2.3s;
 
       &-2 {
         opacity: 1;
