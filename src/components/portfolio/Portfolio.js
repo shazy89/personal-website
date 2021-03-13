@@ -1,14 +1,31 @@
 import React from "react";
-//import video from "../../assets/images/portfolio/coding.mp4";
+import Card from "../card/Card";
+import video from "../../assets/images/portfolio/coding.mp4";
 import video1 from "../../assets/images/portfolio/Coding_technology.mp4";
 const Portfolio = () => {
   return (
     <section className="section-portfolio u-margin-top-huge">
       <div class="bg-video">
         <video class="bg-video__content" autoPlay muted loop>
-          <source src={video1} type="video/mp4" />
+          <source src={video} type="video/mp4" />
           Your browser is not supported!
         </video>
+      </div>
+      <div className="row">
+        <div className="col-1-of-2">
+          <Card />
+        </div>
+        <div className="col-1-of-2">
+          <Card />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-1-of-2">
+          <Card />
+        </div>
+        <div className="col-1-of-2">
+          <Card />
+        </div>
       </div>
     </section>
   );
