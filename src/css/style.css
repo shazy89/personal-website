@@ -7,6 +7,10 @@
   backface-visibility: hidden;
   border-radius: 3px;
   width: 100%; }
+  .card__heading {
+    height: 26rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    background-color: red; }
 
 .bg-video {
   position: absolute;
