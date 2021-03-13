@@ -1,4 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&display=swap");
+.card {
+  background-color: #eeeeeede;
+  height: 52rem;
+  position: relative;
+  box-shadow: 0 1.5rem 4rem rgba(29, 29, 29, 0.945);
+  backface-visibility: hidden;
+  border-radius: 3px;
+  width: 100%; }
+
 .bg-video {
   position: absolute;
   top: 0;

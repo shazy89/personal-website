@@ -4,7 +4,13 @@ import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
 
 const Card = () => {
-  return <div className="card"></div>;
+  return (
+    <div className="card">
+      <CardHeading />
+      <CardContent />
+      <CardFooter />
+    </div>
+  );
 };
 
 export default Card;
