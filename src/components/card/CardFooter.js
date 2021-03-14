@@ -3,7 +3,7 @@ import React from "react";
 const CardFooter = ({ handleClick }) => {
   return (
     <div className="card__footer">
-      <button className="card__link" onClick={handleClick}>
+      <button className="card__button" onClick={handleClick}>
         hey
       </button>
       <a className="card__link" href="">

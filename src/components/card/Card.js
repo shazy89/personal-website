@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import CardHeading from "./CardHeading";
 import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
@@ -16,7 +16,6 @@ const Card = () => {
   };
   const useClickOutside = (ref, callback) => {
     const handleClick = (e) => {
-      debugger;
       if (ref.current && !ref.current.contains(e.target)) {
         callback();
       }
