@@ -45,7 +45,8 @@ export const projects = {
       demo: "https://www.youtube.com/watch?v=Drl2QNIZ3W4",
       info:
         "Single Page Sports app with information on all countries' soccer leagues, teams, and players with user ability to create favorite teams",
-      technologies: "Javascript (ES6), Ruby on Rails, Active Record, SQLite,",
+      technologies:
+        "Javascript (ES6), Ruby on Rails, HTML, CSS, Active Record, PostgreSQL,",
       imgs: [
         "https://res.cloudinary.com/dytheecsk/image/upload/v1605120182/portfolio/fm3_jo6kqj.png",
         "https://res.cloudinary.com/dytheecsk/image/upload/v1605120172/portfolio/fm2_ouxhqp.png",
@@ -61,7 +62,7 @@ export const projects = {
       webApp: null,
       info: `Management system that restaurants use to efficiently manage guests through the entire dining experience. It gives
             managers the tools to turn tables faster and reduce errors.`,
-      technologies: `Ruby on Rails, Active Record, SQLite, HTML, CSS`,
+      technologies: `Ruby on Rails,HTML, CSS, Active Record, PostgreSQL`,
       imgs: [
         "https://res.cloudinary.com/dytheecsk/image/upload/v1605120248/portfolio/ot3_vjnp1a.png",
         "https://res.cloudinary.com/dytheecsk/image/upload/v1605120241/portfolio/ot2_stmumv.png",
