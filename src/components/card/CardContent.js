@@ -2,7 +2,6 @@ import React from "react";
 import { icons } from "../portfolio/Icons";
 
 const CardContent = () => {
-  console.log(icons);
   return (
     <div className="card__content--container">
       <div className="card__content--project">
