@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useRef, useEffect } from "react";
 import CardHeading from "./CardHeading";
 import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
@@ -6,13 +6,32 @@ import Modal from "../modals/VideoModal";
 
 const Card = () => {
   const [trigger, setTrigger] = useState(false);
+  const clickRef = useRef();
 
   const handleClick = () => {
-    !trigger ? setTrigger(true) : setTrigger(false);
+    setTrigger(true);
   };
+  const hideModal = () => {
+    setTrigger(false);
+  };
+  const useClickOutside = (ref, callback) => {
+    const handleClick = (e) => {
+      debugger;
+      if (ref.current && !ref.current.contains(e.target)) {
+        callback();
+      }
+    };
+    useEffect(() => {
+      document.addEventListener("click", handleClick);
+      return () => {
+        document.removeEventListener("click", handleClick);
+      };
+    });
+  };
+  useClickOutside(clickRef, hideModal);
   return (
     <>
-      <div className="card">
+      <div className="card" ref={clickRef}>
         <CardHeading />
         <CardContent />
         <CardFooter handleClick={handleClick} />
