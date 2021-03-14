@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
-const CardFooter = () => {
+const CardFooter = ({ handleClick }) => {
   return (
     <div className="card__footer">
-      <button className="card__link">hey</button>
+      <button className="card__link" onClick={handleClick}>
+        hey
+      </button>
       <a className="card__link" href="">
         you{" "}
       </a>

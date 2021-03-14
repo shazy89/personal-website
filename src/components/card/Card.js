@@ -5,13 +5,20 @@ import CardFooter from "./CardFooter";
 import Modal from "../modals/VideoModal";
 
 const Card = () => {
-  const [trigger, setTrigger] = useState(true);
+  const [trigger, setTrigger] = useState(false);
+
+  const handleClick = () => {
+    !trigger ? setTrigger(true) : setTrigger(false);
+  };
   return (
-    <div className="card">
-      <CardHeading />
-      <CardContent />
-      <CardFooter />
-    </div>
+    <>
+      <div className="card">
+        <CardHeading />
+        <CardContent />
+        <CardFooter handleClick={handleClick} />
+      </div>
+      {trigger && <Modal />}
+    </>
   );
 };
 

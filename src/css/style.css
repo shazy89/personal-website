@@ -121,7 +121,7 @@
     .modal__content-video {
       height: 80vh;
       width: 100%;
-      pad: 1rem; }
+      padding: 1rem; }
 
 @keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
