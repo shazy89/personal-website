@@ -10,7 +10,7 @@ export const projects = {
         "https://www.youtube.com/watch?v=7GHLfw1aOUQ&list=PL0zbnzgKNis1xNPhk3jmGx_KhQgK1SzaS&index=9&t=7s",
       info: `Social Media App featuring real-time message delivery, user profile customization, easy network building, user authentication, mobile optimized.`,
       technologies:
-        "Action Cable, React, React-Router, Redux, Thunk, CSS, JWT Auth, Ruby on Rails, PostgreSQL, Cloudinary",
+        "Javascript, React, React-Router, Redux, Thunk, CSS, JWT Auth, Ruby on Rails, Action Cable, PostgreSQL, Cloudinary",
       imgs: [
         "https://res.cloudinary.com/dytheecsk/image/upload/v1607092841/portfolio/Screen_Shot_2020-12-02_at_2.16.06_PM_rctf76.png",
         "https://res.cloudinary.com/dytheecsk/image/upload/v1607092844/portfolio/Screen_Shot_2020-12-02_at_2.16.17_PM_i3zicb.png",
@@ -29,7 +29,7 @@ export const projects = {
       info: `Single Page Car rental app with customizable dates for customers. 
                      Admin has the ability to upload images for new car postings, manage current listings, and review booking metrics reports.`,
       technologies:
-        "Javascript, React, React Native, Expo, Redux, Thunk, Ruby on Rails, PostgreSQL, Axios, Heroku, HTML, CSS, Cloudinary",
+        "Javascript, React,Redux, React Native, Expo, Thunk, Ruby on Rails, PostgreSQL, Axios, Heroku, HTML, CSS, Cloudinary",
       imgs: [
         "https://res.cloudinary.com/dytheecsk/image/upload/v1610213769/Screen_Shot_2021-01-09_at_12.35.15_PM_zxwj2y.png",
         "https://res.cloudinary.com/dytheecsk/image/upload/v1605120202/portfolio/rm2_a8rfve.png",

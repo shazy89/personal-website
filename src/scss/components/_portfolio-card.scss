@@ -73,8 +73,30 @@
     }
   }
   &__content {
+      &--container {
       height: 20rem;
       border-bottom: 3px solid black;
+    }
+      &--project {
+       height: 15rem;
+       font-size: 1.7rem;
+       line-height: 1.43;
+       letter-spacing: 0.1rem;
+       padding: 1.3rem;
+       color: $card-text-color-1;
+       display: flex;
+       align-items: center;
+      }
+      &--technologies {
+          display: flex;
+          font-size: 3rem;
+          text-decoration: none;
+          list-style: none;
+          justify-content: flex-end;
+          &--icon {
+
+          }
+    }
   }
 
   &__footer {

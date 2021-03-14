@@ -9,6 +9,4 @@ export const icons = {
   html: <SiHtml5 />,
   ruby: <DiRuby />,
   js: <IoLogoJavascript />,
-  postgres: <SiPostgresql />,
-  postgres: <SiPostgresql />,
 };

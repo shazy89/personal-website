@@ -47,9 +47,24 @@
       .card__heading__img-3 {
         left: 10rem;
         top: 9.7rem; }
-  .card__content {
+  .card__content--container {
     height: 20rem;
     border-bottom: 3px solid black; }
+  .card__content--project {
+    height: 15rem;
+    font-size: 1.7rem;
+    line-height: 1.43;
+    letter-spacing: 0.1rem;
+    padding: 1.3rem;
+    color: #353535;
+    display: flex;
+    align-items: center; }
+  .card__content--technologies {
+    display: flex;
+    font-size: 3rem;
+    text-decoration: none;
+    list-style: none;
+    justify-content: flex-end; }
 
 .bg-video {
   position: absolute;
