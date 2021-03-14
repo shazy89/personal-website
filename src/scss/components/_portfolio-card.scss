@@ -39,26 +39,45 @@
         color: $card-text-color;
       }
     }
+    // __img is the classname of html div
     &__img {
-       position: relative;
-       &-all {
-           position: absolute;
+      position: relative;
+      &-all {
+        position: absolute;
         width: 35%;
-         height: 12rem;
+        height: 12rem;
         box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
         border-radius: 2px;
-        transition: all .2s;
+        transition: all 0.2s;
         outline-offset: 2rem;
         z-index: 10;
-       }
-        &-1 {}
-        &-2 { }
-        &-3 { }
+        &:hover {
+           
+            transform: scale(1.2) translateY(-.5rem);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 20;
+        }
+      }
+      &-1 {
+        left: 17rem;
+        top: 1.7rem;
+      }
+      &-2 {
+        left: 2rem;
+        top: 3.7rem;
+      }
+      &-3 {
+        left: 10rem;
+        top: 9.7rem;
+      }
     }
   }
   &__content {
+      height: 20rem;
+      border-bottom: 3px solid black;
   }
 
   &__footer {
+
   }
 }

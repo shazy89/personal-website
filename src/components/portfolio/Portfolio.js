@@ -5,8 +5,8 @@ import video1 from "../../assets/images/portfolio/Coding_technology.mp4";
 const Portfolio = () => {
   return (
     <section className="section-portfolio u-margin-top-huge">
-      <div class="bg-video">
-        <video class="bg-video__content" autoPlay muted loop>
+      <div className="bg-video">
+        <video className="bg-video__content" autoPlay muted loop>
           <source src={video} type="video/mp4" />
           Your browser is not supported!
         </video>

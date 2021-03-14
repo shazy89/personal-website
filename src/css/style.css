@@ -31,9 +31,25 @@
         height: 12rem;
         box-shadow: 0 1.5rem 4rem rgba(29, 29, 29, 0.15);
         border-radius: 2px;
-        transition: all .2s;
+        transition: all 0.2s;
         outline-offset: 2rem;
         z-index: 10; }
+        .card__heading__img-all:hover {
+          transform: scale(1.2) translateY(-0.5rem);
+          box-shadow: 0 2.5rem 4rem rgba(29, 29, 29, 0.5);
+          z-index: 20; }
+      .card__heading__img-1 {
+        left: 17rem;
+        top: 1.7rem; }
+      .card__heading__img-2 {
+        left: 2rem;
+        top: 3.7rem; }
+      .card__heading__img-3 {
+        left: 10rem;
+        top: 9.7rem; }
+  .card__content {
+    height: 20rem;
+    border-bottom: 3px solid black; }
 
 .bg-video {
   position: absolute;
