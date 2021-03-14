@@ -24,14 +24,36 @@
       position: absolute;
       top: 18rem;
       right: 3.5rem;
-      
-      
+
       &__span {
-          padding: 1rem 1.5rem;
-          background-image: linear-gradient(to right top, #555555, #707070, #8c8c8c, #aaaaaa, #c8c8c8);
-          box-decoration-break: clone;
-          color: $card-text-color;
+        padding: 1rem 1.5rem;
+        background-image: linear-gradient(
+          to right top,
+          #574b5c,
+          #736379,
+          #907d98,
+          #ae98b7,
+          #cdb3d8
+        );
+        box-decoration-break: clone;
+        color: $card-text-color;
       }
+    }
+    &__img {
+       position: relative;
+       &-all {
+           position: absolute;
+        width: 35%;
+         height: 12rem;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+        border-radius: 2px;
+        transition: all .2s;
+        outline-offset: 2rem;
+        z-index: 10;
+       }
+        &-1 {}
+        &-2 { }
+        &-3 { }
     }
   }
   &__content {
