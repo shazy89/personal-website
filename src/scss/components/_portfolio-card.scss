@@ -103,6 +103,29 @@
   }
 
   &__footer {
+    display: flex;
+    height: 6rem;
+    align-items: center;
 
   }
+
+  &__link {
+    &:link,
+    &:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 2.3rem;
+    color: $card-text-color-1;
+    padding: 1rem;
+    transition: all .3s;
+}
+
+&:hover,
+&:active {
+        background-color: rgba($color-light-grey, 0.5);
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+  }
+
 }

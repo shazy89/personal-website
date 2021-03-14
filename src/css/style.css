@@ -68,6 +68,21 @@
     justify-content: flex-end; }
     .card__content--technologies-icon {
       margin-right: 2rem; }
+  .card__footer {
+    display: flex;
+    height: 6rem;
+    align-items: center; }
+  .card__link:link, .card__link:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    margin-left: 2.3rem;
+    color: #353535;
+    padding: 1rem;
+    transition: all .3s; }
+  .card__link:hover, .card__link:active {
+    background-color: rgba(226, 226, 226, 0.5);
+    cursor: pointer;
+    transform: scale(1.2); }
 
 .bg-video {
   position: absolute;
