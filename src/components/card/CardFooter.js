@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import Modal from "../modals/VideoModal";
 
 const CardFooter = () => {
+  const [trigger, setTrigger] = useState(false);
   return (
     <div className="card__footer">
-      <a className="card__link" href="">
-        hey
-      </a>
+      <button className="card__link">hey</button>
       <a className="card__link" href="">
         you{" "}
       </a>
