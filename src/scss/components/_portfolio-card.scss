@@ -75,7 +75,7 @@
   &__content {
       &--container {
       height: 20rem;
-      border-bottom: 3px solid black;
+ 
     }
       &--project {
        height: 15rem;
@@ -93,10 +93,12 @@
           text-decoration: none;
           list-style: none;
           justify-content: flex-end;
-          &--icon {
+          &-icon {
+            margin-right: 2rem;
 
           }
-    }
+        }
+
   }
 
   &__footer {
