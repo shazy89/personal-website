@@ -10,14 +10,22 @@
     &__content {
        @include absCenter;
        width: 80%;
-       background-color: $color-dirty-white;
+    
+       background-color: $color-white;
        box-shadow: 0 2rem 4rem rgba($color-black, .2);
        border-radius: 3px;
        transform: translate(-50%, -50%) scale(1);
        transition: all .5s .2s;
 
-       &__after {
+    //   &__after {
 
-       }
+    //   }
+   &-video {
+       height: 80vh;
+       width: 100%;
+       pad: 1rem;
+   }
     }
+
+
 }
