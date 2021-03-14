@@ -75,7 +75,8 @@
   &__content {
       &--container {
       height: 20rem;
- 
+      border-bottom: 1px solid rgb(190, 190, 190);
+      box-shadow: 0 10px 11px -1px rgba(150, 150, 150, 0.658);
     }
       &--project {
        height: 15rem;

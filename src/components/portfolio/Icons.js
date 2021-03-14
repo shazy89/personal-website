@@ -3,10 +3,10 @@ import { SiRedux, SiHtml5, SiPostgresql } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 
 export const icons = {
-  react: <IoLogoReact />,
-  redux: <SiRedux />,
-  css: <IoLogoCss3 />,
-  html: <SiHtml5 />,
-  ruby: <DiRuby />,
-  js: <IoLogoJavascript />,
+  react: <IoLogoReact color="#3737a0" />,
+  redux: <SiRedux color="purple" />,
+  css: <IoLogoCss3 color="#4c4cd8" />,
+  html: <SiHtml5 color="orange" />,
+  ruby: <DiRuby color="red" />,
+  js: <IoLogoJavascript color="yellow" />,
 };

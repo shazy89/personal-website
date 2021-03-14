@@ -48,7 +48,9 @@
         left: 10rem;
         top: 9.7rem; }
   .card__content--container {
-    height: 20rem; }
+    height: 20rem;
+    border-bottom: 1px solid #bebebe;
+    box-shadow: 0 10px 11px -1px rgba(150, 150, 150, 0.658); }
   .card__content--project {
     height: 15rem;
     font-size: 1.7rem;
