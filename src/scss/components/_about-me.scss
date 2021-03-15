@@ -1,0 +1,31 @@
+.about-me {
+    &__container {
+        height: 90vh;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($color-light-grey, 0.8),
+            rgba($color-dark-grey, 0.8)
+          ),
+          url("https://res.cloudinary.com/dytheecsk/image/upload/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg");
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        z-index: -1;
+
+
+        -webkit-filter: hue-rotate(299deg);
+        filter: hue-rotate(299deg);
+    }
+    &__img{
+        width: 45rem;
+        height: 60rem;
+        background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/v1615846326/portfolio/me_ocryct.png");
+        background-size: cover;
+        background-position: top;
+        position: absolute;
+        bottom: 0.1rem;
+    }
+    &__content{}
+    &__header{}
+    &__paragraph{}
+}
