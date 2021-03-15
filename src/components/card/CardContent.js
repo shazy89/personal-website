@@ -1,14 +1,11 @@
 import React from "react";
 import { icons } from "../portfolio/Icons";
 
-const CardContent = () => {
+const CardContent = ({ info }) => {
   return (
     <div className="card__content--container">
       <div className="card__content--project">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua
-        </p>
+        <p>{info}</p>
       </div>
       <div>
         {" "}

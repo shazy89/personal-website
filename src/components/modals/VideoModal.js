@@ -8,11 +8,10 @@ const VideoModal = ({ demo, name }) => {
         <iframe
           className="modal__content-video"
           title={name}
-          src={demo}
+          src="https://www.youtube.com/embed/hineGNZfXRw"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          scrolling="no"
         ></iframe>{" "}
       </div>
     </div>

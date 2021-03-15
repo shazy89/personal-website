@@ -18,11 +18,11 @@ export default () => {
       }
     };
     useEffect(() => {
-      document.addEventListener("click", handleClick, { passive: false });
+      document.addEventListener("click", handleClick);
       return () => {
-        document.removeEventListener("click", handleClick, { passive: true });
+        document.removeEventListener("click", handleClick);
       };
-    }, []);
+    });
   };
   useClickOutside(clickRef, hideModal);
 

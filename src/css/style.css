@@ -14,7 +14,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-image: linear-gradient(to left bottom, #ff84ca41, #e2e2e2, #c2c2c2); }
     .card__heading__text {
-      font-size: 2.7rem;
+      font-size: 2.3rem;
       font-weight: 300;
       text-align: right;
       position: absolute;
