@@ -154,13 +154,14 @@
   filter: hue-rotate(299deg); }
 
 .about-me__img {
-  width: 45rem;
-  height: 60rem;
+  width: 35%;
+  height: 50rem;
   background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/v1615846326/portfolio/me_ocryct.png");
   background-size: cover;
-  background-position: top;
+  background-position: center;
   position: absolute;
-  bottom: 0.1rem; }
+  bottom: 0.1rem;
+  background-repeat: no-repeat; }
 
 @keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
