@@ -12,7 +12,7 @@ const Card = ({ project }) => {
   // console.log(trigger);
   //ref={clickRef}
   // handleClick={handleClick}
-  console.log(project);
+
   return (
     <>
       <div className="col-1-of-2">

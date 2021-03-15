@@ -422,3 +422,7 @@ body {
 .section-portfolio {
   position: relative;
   padding: 15rem 0; }
+
+.section-abour {
+  padding: 15rem 0;
+  margin-top: -20vh; }
