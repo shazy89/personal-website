@@ -1,17 +1,30 @@
 import React from "react";
 
-const CardFooter = ({ handleClick }) => {
+const CardFooter = ({ handleClick, github, mobGithub }) => {
   return (
     <div className="card__footer">
       <button className="card__button" onClick={handleClick}>
-        hey
+        Demo
       </button>
-      <a className="card__link" href="">
-        you{" "}
+      <a
+        className=""
+        href={`https://github.com/WICG/EventListenerOptions/blob/gh-pages/explainer.md`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub{" "}
       </a>
-      <a className="card__link" href="">
-        ok
-      </a>
+
+      {mobGithub && (
+        <a
+          className="card__link"
+          href={mobGithub}
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub Mobile App
+        </a>
+      )}
     </div>
   );
 };

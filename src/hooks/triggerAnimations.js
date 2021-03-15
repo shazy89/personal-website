@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 export default () => {
   const [trigger, setTriger] = useState(false);
   const [animations, setAnimations] = useState({

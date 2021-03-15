@@ -1,16 +1,19 @@
 import React from "react";
 
-const VideoModal = () => {
+const VideoModal = ({ demo, name }) => {
   return (
     <div className="modal">
       <div className="modal__content">
+        {" "}
         <iframe
           className="modal__content-video"
-          src="https://www.youtube-nocookie.com/embed/7GHLfw1aOUQ"
+          title={name}
+          src={demo}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+          scrolling="no"
+        ></iframe>{" "}
       </div>
     </div>
   );

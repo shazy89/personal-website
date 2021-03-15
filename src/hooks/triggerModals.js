@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export default () => {
   const [trigger, setTrigger] = useState(false);
@@ -12,16 +12,17 @@ export default () => {
   };
   const useClickOutside = (ref, callback) => {
     const handleClick = (e) => {
+      e.preventDefault();
       if (ref.current && !ref.current.contains(e.target)) {
         callback();
       }
     };
     useEffect(() => {
-      document.addEventListener("click", handleClick);
+      document.addEventListener("click", handleClick, { passive: false });
       return () => {
-        document.removeEventListener("click", handleClick);
+        document.removeEventListener("click", handleClick, { passive: true });
       };
-    });
+    }, []);
   };
   useClickOutside(clickRef, hideModal);
 

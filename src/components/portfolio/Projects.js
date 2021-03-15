@@ -22,8 +22,8 @@ export const projects = [
     github: "https://github.com/shazy89/rent-me-web",
     mobGithub: "https://github.com/shazy89/RentMe-mobile",
     webApp: "https://github.com/shazy89/RentMe-mobile",
-    demo: "https://www.youtube.com/embed/IEPtg8YQBbI",
-    demoMob: "https://www.youtube.com/embed/dZjlMhitkwc",
+    //demoMob: "https://www.youtube.com/embed/IEPtg8YQBbI",
+    demo: "https://www.youtube.com/embed/dZjlMhitkwc",
     info: `Single Page Car rental app with customizable dates for customers. 
                      Admin has the ability to upload images for new car postings, manage current listings, and review booking metrics reports.`,
     technologies:

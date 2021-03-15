@@ -9,4 +9,5 @@ export const icons = {
   html: <SiHtml5 color="orange" />,
   ruby: <DiRuby color="red" />,
   js: <IoLogoJavascript color="yellow" />,
+  postgres: <SiPostgresql color="#3737a0" />,
 };

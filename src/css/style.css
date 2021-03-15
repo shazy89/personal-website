@@ -4,11 +4,13 @@
   height: 52rem;
   position: relative;
   box-shadow: 0 1.5rem 4rem rgba(29, 29, 29, 0.945);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
   width: 100%; }
   .card__heading {
     height: 26rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-image: linear-gradient(to left bottom, #ff84ca41, #e2e2e2, #c2c2c2); }
     .card__heading__text {
@@ -17,10 +19,12 @@
       text-align: right;
       position: absolute;
       top: 18rem;
-      right: 3.5rem; }
+      right: 3.5rem;
+      width: 60%; }
       .card__heading__text__span {
         padding: 1rem 1.5rem;
         background-image: linear-gradient(to right top, #574b5c, #736379, #907d98, #ae98b7, #cdb3d8);
+        -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         color: #e2e2e2; }
     .card__heading__img {

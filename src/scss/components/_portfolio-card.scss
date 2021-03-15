@@ -4,12 +4,14 @@
   position: relative;
 
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.945);
-  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
   border-radius: 3px;
   width: 100%;
   &__heading {
     height: 26rem;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-image: linear-gradient(
       to left bottom,
       $color-light-pink,
@@ -24,6 +26,7 @@
       position: absolute;
       top: 18rem;
       right: 3.5rem;
+      width: 60%;
 
       &__span {
         padding: 1rem 1.5rem;
@@ -35,7 +38,8 @@
           #ae98b7,
           #cdb3d8
         );
-        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+                box-decoration-break: clone;
         color: $card-text-color;
       }
     }
