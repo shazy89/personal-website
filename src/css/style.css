@@ -163,6 +163,27 @@
   bottom: 0.1rem;
   background-repeat: no-repeat; }
 
+.about-me__content {
+  width: 65%;
+  float: right;
+  padding: 1rem; }
+
+.about-me__header {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  display: inline-block;
+  background-image: linear-gradient(to right, #f50057, #574b5c);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: .2rem;
+  transition: all .2s; }
+
+.about-me__paragraph {
+  font-size: 2.2rem;
+  letter-spacing: .2rem; }
+
 @keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
     -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -314,6 +335,12 @@ body {
   @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-big {
       margin-bottom: 5rem !important; } }
+
+.u-margin-top {
+  margin-top: 2rem !important; }
+
+.u-margin-top-small {
+  margin-top: 4rem !important; }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
