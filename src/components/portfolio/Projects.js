@@ -8,8 +8,28 @@ export const projects = [
     demo: "https://www.youtube.com/embed/7GHLfw1aOUQ",
     info:
       "Social Media App featuring real-time message delivery, user profile customization, easy network building, user authentication, mobile optimized.",
-    technologies:
-      "Javascript, React, React-Router, Redux, Thunk, CSS, JWT Auth, Ruby on Rails, Action Cable, PostgreSQL, Cloudinary",
+    technologies: [
+      "Javascript",
+      "React",
+      "React-Router",
+      "Redux",
+      "Thunk",
+      "CSS",
+      "JWT Auth",
+      "Ruby on Rails",
+      "Action Cable",
+      "PostgreSQL",
+      "Cloudinary",
+    ],
+    technologiesForIcons: [
+      "javascript",
+      "react",
+      "redux",
+      "html",
+      "css",
+      "rubyonrails",
+      "postgresql",
+    ],
     imgs: [
       "https://res.cloudinary.com/dytheecsk/image/upload/v1607092841/portfolio/Screen_Shot_2020-12-02_at_2.16.06_PM_rctf76.png",
       "https://res.cloudinary.com/dytheecsk/image/upload/v1607092844/portfolio/Screen_Shot_2020-12-02_at_2.16.17_PM_i3zicb.png",
@@ -26,8 +46,30 @@ export const projects = [
     demo: "https://www.youtube.com/embed/dZjlMhitkwc",
     info: `Single Page Car rental app with customizable dates for customers. 
                      Admin has the ability to upload images for new car postings, manage current listings, and review booking metrics reports.`,
-    technologies:
-      "Javascript, React,Redux, React Native, Expo, Thunk, Ruby on Rails, PostgreSQL, Axios, Heroku, HTML, CSS, Cloudinary",
+    technologies: [
+      "Javascript",
+      "React",
+      "Redux",
+      "React Native",
+      "Expo",
+      "Thunk",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "Axios",
+      "Heroku",
+      "HTML",
+      "CSS",
+      "Cloudinary",
+    ],
+    technologiesForIcons: [
+      "javascript",
+      "react",
+      "redux",
+      "html",
+      "css",
+      "rubyonrails",
+      "postgresql",
+    ],
     imgs: [
       "https://res.cloudinary.com/dytheecsk/image/upload/v1610213769/Screen_Shot_2021-01-09_at_12.35.15_PM_zxwj2y.png",
       "https://res.cloudinary.com/dytheecsk/image/upload/v1605120202/portfolio/rm2_a8rfve.png",
@@ -43,8 +85,21 @@ export const projects = [
     demo: "https://www.youtube.com/embed/Drl2QNIZ3W4",
     info:
       "Single Page Sports app with information on all countries' soccer leagues, teams, and players with user ability to create favorite teams",
-    technologies:
-      "Javascript, Ruby on Rails, HTML, CSS, Active Record, PostgreSQL,",
+    technologies: [
+      "Javascript",
+      "Ruby on Rails",
+      "HTML",
+      "CSS",
+      "Active Record",
+      "PostgreSQL",
+    ],
+    technologiesForIcons: [
+      "javascript",
+      "rubyonrails",
+      "html",
+      "css",
+      "postgresql",
+    ],
     imgs: [
       "https://res.cloudinary.com/dytheecsk/image/upload/v1605120182/portfolio/fm3_jo6kqj.png",
       "https://res.cloudinary.com/dytheecsk/image/upload/v1605120172/portfolio/fm2_ouxhqp.png",
@@ -60,7 +115,14 @@ export const projects = [
     webApp: null,
     info: `Management system that restaurants use to efficiently manage guests through the entire dining experience. It gives
             managers the tools to turn tables faster and reduce errors.`,
-    technologies: `Ruby on Rails,HTML, CSS, Active Record, PostgreSQL`,
+    technologies: [
+      "Ruby on Rails",
+      "HTML",
+      "CSS",
+      "Active Record",
+      "PostgreSQL",
+    ],
+    technologiesForIcons: ["rubyonrails", "html", "css", "postgresql"],
     imgs: [
       "https://res.cloudinary.com/dytheecsk/image/upload/v1605120248/portfolio/ot3_vjnp1a.png",
       "https://res.cloudinary.com/dytheecsk/image/upload/v1605120241/portfolio/ot2_stmumv.png",

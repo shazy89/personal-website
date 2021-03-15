@@ -1,7 +1,12 @@
 import React from "react";
 import { icons } from "../portfolio/Icons";
 
-const CardContent = ({ info }) => {
+const CardContent = ({ info, technologiesForIcons }) => {
+  console.log(technologiesForIcons);
+  const displayLogos = technologiesForIcons.map((asd) => {
+    return <li className="card__content--technologies-icon">{icons[asd]}</li>;
+  });
+
   return (
     <div className="card__content--container">
       <div className="card__content--project">
@@ -9,11 +14,7 @@ const CardContent = ({ info }) => {
       </div>
       <div>
         {" "}
-        <ul className="card__content--technologies">
-          <li className="card__content--technologies-icon">{icons.react}</li>
-          <li className="card__content--technologies-icon">{icons.redux}</li>
-          <li className="card__content--technologies-icon">{icons.css}</li>
-        </ul>
+        <ul className="card__content--technologies">{displayLogos}</ul>
       </div>
     </div>
   );

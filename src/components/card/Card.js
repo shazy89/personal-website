@@ -12,12 +12,16 @@ const Card = ({ project }) => {
   // console.log(trigger);
   //ref={clickRef}
   // handleClick={handleClick}
+  console.log(project);
   return (
     <>
       <div className="col-1-of-2">
         <div className="card">
           <CardHeading images={project.imgs} name={project.name} />
-          <CardContent info={project.info} />
+          <CardContent
+            info={project.info}
+            technologiesForIcons={project.technologiesForIcons}
+          />
           <CardFooter
             mobGithub={project.mobGithub}
             github={project.github}
