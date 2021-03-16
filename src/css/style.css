@@ -8,6 +8,9 @@
   backface-visibility: hidden;
   border-radius: 3px;
   width: 100%; }
+  @media only screen and (max-width: 75em) {
+    .card {
+      height: 60rem; } }
   .card__heading {
     height: 26rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -21,6 +24,12 @@
       top: 18rem;
       right: 3.5rem;
       width: 60%; }
+      @media only screen and (max-width: 75em) {
+        .card__heading__text {
+          font-size: 3.4rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .card__heading__text {
+          font-size: 2.4rem; } }
       .card__heading__text__span {
         padding: 1rem 1.5rem;
         background-image: linear-gradient(to right top, #574b5c, #736379, #907d98, #ae98b7, #cdb3d8);
@@ -42,15 +51,32 @@
           transform: scale(1.2) translateY(-0.5rem);
           box-shadow: 0 2.5rem 4rem rgba(29, 29, 29, 0.5);
           z-index: 20; }
+        @media only screen and (max-width: 75em) {
+          .card__heading__img-all {
+            width: 22%;
+            height: 15rem; } }
+        @media only screen and (max-width: 37.5em) {
+          .card__heading__img-all {
+            width: 27%;
+            height: 10rem; } }
       .card__heading__img-1 {
         left: 17rem;
         top: 1.7rem; }
+        @media only screen and (max-width: 37.5em) {
+          .card__heading__img-1 {
+            left: 12rem; } }
       .card__heading__img-2 {
         left: 2rem;
         top: 3.7rem; }
       .card__heading__img-3 {
         left: 10rem;
         top: 9.7rem; }
+        @media only screen and (max-width: 37.5em) {
+          .card__heading__img-3 {
+            left: 8rem; } }
+    @media only screen and (max-width: 75em) {
+      .card__heading {
+        height: 30rem; } }
   .card__content--container {
     height: 20rem;
     border-bottom: 1px solid #bebebe;
@@ -64,6 +90,9 @@
     color: #353535;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 75em) {
+      .card__content--project {
+        font-size: 2rem; } }
   .card__content--technologies {
     display: flex;
     font-size: 3rem;
@@ -76,6 +105,9 @@
     display: flex;
     height: 6rem;
     align-items: center; }
+    @media only screen and (max-width: 75em) {
+      .card__footer {
+        height: 10rem; } }
   .card__link:link, .card__link:visited {
     font-size: 2rem;
     text-decoration: none;
