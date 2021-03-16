@@ -190,7 +190,7 @@
   filter: hue-rotate(299deg); }
   @media only screen and (max-width: 37.5em) {
     .about-me__container {
-      height: 70vh; } }
+      height: 80vh; } }
 
 .about-me__img {
   width: 35%;
@@ -199,14 +199,14 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  bottom: 0.1rem;
+  bottom: -0.1rem;
   z-index: -1;
   background-repeat: no-repeat; }
   @media only screen and (max-width: 37.5em) {
     .about-me__img {
       background-size: 100%;
-      width: 53%;
-      height: 33rem; } }
+      width: 56%;
+      height: 30rem; } }
 
 .about-me__content {
   width: 65%;
@@ -222,11 +222,11 @@
   background-image: linear-gradient(to right, #efefef, #eec6ff);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem; }
+  letter-spacing: 0.2rem; }
 
 .about-me__paragraph {
-  font-size: 2.2rem;
-  letter-spacing: .2rem;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
   background-image: linear-gradient(to right, #ffffff, #efefef);
   -webkit-background-clip: text;
   color: transparent; }
@@ -558,12 +558,18 @@ body {
 
 .u-margin-top-small {
   margin-top: 4rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-top-small {
+      margin-top: 2rem !important; } }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
 
 .u-margin-top-huge {
   margin-top: 10rem !important; }
+  @media only screen and (max-width: 37.5em) {
+    .u-margin-top-huge {
+      margin-top: 3rem !important; } }
 
 .row {
   max-width: 114rem;

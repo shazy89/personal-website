@@ -1,66 +1,61 @@
 .about-me {
-    &__container {
-        height: 90vh;
-        background-image: linear-gradient(
-            to right bottom,
-            rgba($color-light-grey, 0.6),
-            rgba($color-dark-grey, 0.6)
-          ),
-          url("https://res.cloudinary.com/dytheecsk/image/upload/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg");
-        background-size: cover;
-        background-position: top;
-        position: relative;
-        z-index: -1;
+  &__container {
+    height: 90vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-light-grey, 0.6),
+        rgba($color-dark-grey, 0.6)
+      ),
+      url("https://res.cloudinary.com/dytheecsk/image/upload/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: -1;
 
+    -webkit-filter: hue-rotate(299deg);
+    filter: hue-rotate(299deg);
+    @include respond(phone) {
+      height: 80vh;
+    }
+  }
+  &__img {
+    width: 35%;
+    height: 50rem;
+    background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/v1615846326/portfolio/me_ocryct.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: -0.1rem;
+    z-index: -1;
+    background-repeat: no-repeat;
+    @include respond(phone) {
+      background-size: 100%;
+      width: 56%;
+      height: 30rem;
+    }
+  }
+  &__content {
+    width: 65%;
+    float: right;
+    padding: 1rem;
 
-        -webkit-filter: hue-rotate(299deg);
-        filter: hue-rotate(299deg);
-        @include respond(phone) {
-            
-            height: 70vh;
-          }
-    }
-    &__img{
-        width: 35%;
-        height: 50rem;
-        background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/v1615846326/portfolio/me_ocryct.png");
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        bottom: 0.1rem;
-        z-index: -1;
-        background-repeat: no-repeat;
-        @include respond(phone) {
-            
-            background-size: 100%;
-
-            width: 53%;
-            height: 33rem;
-        
-          }
-    }
-    &__content{
-        width: 65%;
-        float: right;
-        padding: 1rem ;
-    }
-    &__header{
-        text-align: center;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 3.5rem;
-        display: inline-block;
-        background-image: linear-gradient(to right,  #efefef, #eec6ff);
-        -webkit-background-clip: text;
-        color: transparent;
-        letter-spacing: .2rem;
-
-    }
-    &__paragraph{
-        font-size: 2.2rem;
-        letter-spacing: .2rem;
-        background-image: linear-gradient(to right, #ffffff, #efefef,);
-        -webkit-background-clip: text;
-        color: transparent;
-    }
+  }
+  &__header {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    display: inline-block;
+    background-image: linear-gradient(to right, #efefef, #eec6ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 0.2rem;
+  }
+  &__paragraph {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    background-image: linear-gradient(to right, #ffffff, #efefef);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }
