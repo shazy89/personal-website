@@ -25,6 +25,9 @@
     z-index: 9999;
 
     border-radius: 50%;
+    @include respond(phone) {
+      left: 2rem;
+    }
   }
 
   &__logo {

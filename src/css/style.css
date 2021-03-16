@@ -238,6 +238,12 @@
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   border-radius: 50%;
   box-shadow: 0 1rem 3rem rgba(29, 29, 29, 0.3); }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger__background {
+      height: 60vh;
+      width: 100%;
+      top: -1.5rem;
+      right: -12.3rem; } }
 
 .hamburger__list {
   position: absolute;
@@ -247,6 +253,9 @@
   list-style: none;
   text-align: center;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger__list {
+      transform: translate(-55%, -30%); } }
 
 .hamburger__item {
   margin: 1rem; }
@@ -564,6 +573,9 @@ body {
     left: 8rem;
     z-index: 9999;
     border-radius: 50%; }
+    @media only screen and (max-width: 37.5em) {
+      .header__logo-box {
+        left: 2rem; } }
   .header__logo {
     height: 28.5rem;
     border-radius: 50%;
