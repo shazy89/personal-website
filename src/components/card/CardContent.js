@@ -2,9 +2,12 @@ import React from "react";
 import { icons } from "../portfolio/Icons";
 
 const CardContent = ({ info, technologiesForIcons }) => {
-  console.log(technologiesForIcons);
-  const displayLogos = technologiesForIcons.map((asd) => {
-    return <li className="card__content--technologies-icon">{icons[asd]}</li>;
+  const displayLogos = technologiesForIcons.map((tec) => {
+    return (
+      <li key={tec} className="card__content--technologies-icon">
+        {icons[tec]}
+      </li>
+    );
   });
 
   return (

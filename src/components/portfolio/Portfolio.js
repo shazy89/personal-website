@@ -12,7 +12,10 @@ const Portfolio = () => {
     .slice(2, 4)
     .map((project) => <Card key={project.id} project={project} />);
   return (
-    <section className="section-portfolio u-margin-top-huge">
+    <section
+      id="section_portfolio"
+      className="section-portfolio u-margin-top-huge"
+    >
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
           <source src={video} type="video/mp4" />

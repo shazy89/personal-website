@@ -145,7 +145,7 @@
 
 .about-me__container {
   height: 90vh;
-  background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.8), rgba(119, 119, 119, 0.8)), url("https://res.cloudinary.com/dytheecsk/image/upload/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg");
+  background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.6), rgba(119, 119, 119, 0.6)), url("https://res.cloudinary.com/dytheecsk/image/upload/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg");
   background-size: cover;
   background-position: top;
   position: relative;
@@ -174,15 +174,17 @@
   text-transform: uppercase;
   font-size: 3.5rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #f50057, #574b5c);
+  background-image: linear-gradient(to right, #efefef, #eec6ff);
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: .2rem;
-  transition: all .2s; }
+  letter-spacing: .2rem; }
 
 .about-me__paragraph {
   font-size: 2.2rem;
-  letter-spacing: .2rem; }
+  letter-spacing: .2rem;
+  background-image: linear-gradient(to right, #ffffff, #efefef);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 @keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {

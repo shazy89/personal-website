@@ -7,17 +7,17 @@ const Navbar = () => {
         <ul className="navigation__list">
           <li className="navigation__item">
             <a href="#" className="navigation__link">
-              About
+              Resume
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#" className="navigation__link">
+            <a href="#section_portfolio" className="navigation__link">
               Portfolio
             </a>
           </li>
           <li className="navigation__item">
             <a href="#" className="navigation__link">
-              Resume
+              About
             </a>
           </li>
         </ul>

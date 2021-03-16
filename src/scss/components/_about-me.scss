@@ -3,8 +3,8 @@
         height: 90vh;
         background-image: linear-gradient(
             to right bottom,
-            rgba($color-light-grey, 0.8),
-            rgba($color-dark-grey, 0.8)
+            rgba($color-light-grey, 0.6),
+            rgba($color-dark-grey, 0.6)
           ),
           url("https://res.cloudinary.com/dytheecsk/image/upload/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg");
         background-size: cover;
@@ -38,14 +38,17 @@
         text-transform: uppercase;
         font-size: 3.5rem;
         display: inline-block;
-        background-image: linear-gradient(to right, #f50057, #574b5c);
+        background-image: linear-gradient(to right,  #efefef, #eec6ff);
         -webkit-background-clip: text;
         color: transparent;
         letter-spacing: .2rem;
-        transition: all .2s;
+
     }
     &__paragraph{
         font-size: 2.2rem;
         letter-spacing: .2rem;
+        background-image: linear-gradient(to right, #ffffff, #efefef,);
+        -webkit-background-clip: text;
+        color: transparent;
     }
 }

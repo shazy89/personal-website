@@ -10,17 +10,17 @@ const CardHeading = ({ images, name }) => {
         <img
           className="card__heading__img-all card__heading__img-1"
           src={images[0]}
-          alt="Ed shazimans project image"
+          alt="Ed shazimans project"
         />
         <img
           className="card__heading__img-all card__heading__img-2"
           src={images[1]}
-          alt="Ed shazimans project image"
+          alt="Ed shazimans project"
         />
         <img
           className="card__heading__img-all card__heading__img-3"
           src={images[2]}
-          alt="Ed shazimans project image"
+          alt="Ed shazimans project"
         />
       </div>
     </div>

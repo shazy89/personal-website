@@ -1,9 +1,9 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import CardHeading from "./CardHeading";
 import CardContent from "./CardContent";
 import CardFooter from "./CardFooter";
-import Modal from "../../hooks/triggerModals";
-import triggerModals from "../../hooks/triggerModals";
+//import Modal from "../../hooks/triggerModals";
+//import triggerModals from "../../hooks/triggerModals";
 
 //const Modal = lazy(() => import("../modals/VideoModal"));
 
