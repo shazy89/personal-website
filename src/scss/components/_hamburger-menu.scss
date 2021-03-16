@@ -1,6 +1,16 @@
+@include respond(tab-port) {
 .hamburger {
 
   &__button {
+      height: 7rem;
+      width: 7rem;
+      border-radius: 50%;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.3s;
+      color: white;
+      background: none;
+      text-decoration: none;
 
   }
   &__background {
@@ -15,4 +25,5 @@
   &__item {
       
   }
+}
 }
