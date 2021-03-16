@@ -57,14 +57,13 @@
       left: 71%;
     }
     @include respond(phone) {
-      top: 91% ;
-      left: 60% ;
-    } ;
+      top: 91%;
+      left: 60%;
+    }
   }
   &__triger-animation {
     -webkit-animation: bounceOutUp 3s ease-in 0.4s;
     animation: bounceOutUp 3s ease-in 0.4s;
-
   }
 
   &__socialmedia-link {

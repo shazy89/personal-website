@@ -15,7 +15,7 @@
     -webkit-filter: hue-rotate(299deg);
     filter: hue-rotate(299deg);
     @include respond(phone) {
-      height: 80vh;
+      height: 76vh;
     }
   }
   &__img {
@@ -38,7 +38,6 @@
     width: 65%;
     float: right;
     padding: 1rem;
-
   }
   &__header {
     text-align: center;

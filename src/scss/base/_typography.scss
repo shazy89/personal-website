@@ -1,8 +1,7 @@
 body {
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 400;
-    line-height: 1;
-
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .heading-text {
@@ -18,43 +17,40 @@ body {
   }
   &__parent {
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
   }
   &__first {
-      opacity: 0;
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 2.2rem;
-      -webkit-animation: leftToRight 2s ease-in 2.3s;
-              animation: leftToRight 2s ease-in 2.3s;
- 
-         
+    opacity: 0;
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2.2rem;
+    -webkit-animation: leftToRight 2s ease-in 2.3s;
+    animation: leftToRight 2s ease-in 2.3s;
+
     &-1 {
-        opacity: 1;
-    }    
+      opacity: 1;
+    }
     @include respond(phone) {
       font-size: 6rem;
       letter-spacing: 1rem;
-    }     
+    }
   }
   &__second {
-      display: block;
-      font-size: 2.3rem;
-      font-weight: 700;
-      letter-spacing: 1.2rem;
-      opacity: 0;
-      -webkit-animation: rightToleft 2s ease-in 2.3s;
-              animation: rightToleft 2s ease-in 2.3s;
+    display: block;
+    font-size: 2.3rem;
+    font-weight: 700;
+    letter-spacing: 1.2rem;
+    opacity: 0;
+    -webkit-animation: rightToleft 2s ease-in 2.3s;
+    animation: rightToleft 2s ease-in 2.3s;
 
-      &-2 {
-        opacity: 1;
-
+    &-2 {
+      opacity: 1;
     }
     @include respond(phone) {
       font-size: 2.5rem;
-      letter-spacing: .4rem;
-    }    
+      letter-spacing: 0.4rem;
+    }
   }
-
 }

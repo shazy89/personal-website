@@ -1,7 +1,5 @@
 .navigation {
-    transform: translatey(4.4rem) rotate(
-        -4deg
-        );
+  transform: translatey(4.4rem) rotate(-4deg);
   &__nav {
     position: relative;
 
@@ -31,9 +29,9 @@
       background-size: 230%;
       transition: all 0.4s;
       border-radius: 10%;
-      @include respond(tab-port) { 
-        font-size: 2rem; 
-    }
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
 
     &:hover,
@@ -41,15 +39,13 @@
       background-position: 100%;
       transform: translateX(1rem);
       color: $color-white;
-
     }
   }
   &__item {
     margin: 1rem;
-  
   }
-//  @include respond(tab-port) {
-//    opacity: 0;
-//    
-//  }
+  //  @include respond(tab-port) {
+  //    opacity: 0;
+  //
+  //  }
 }

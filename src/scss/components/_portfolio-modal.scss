@@ -1,32 +1,29 @@
 .modal {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba($color-dark-grey, .7);
-    z-index: 9999;
-    transition: all .3s;
-    &__content {
-       @include absCenter;
-       width: 80%;
-    
-       background-color: $color-white;
-       box-shadow: 0 2rem 4rem rgba($color-black, .2);
-       border-radius: 3px;
-       transform: translate(-50%, -50%) scale(1);
-       transition: all .5s .2s;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-dark-grey, 0.7);
+  z-index: 9999;
+  transition: all 0.3s;
+  &__content {
+    @include absCenter;
+    width: 80%;
+
+    background-color: $color-white;
+    box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
+    border-radius: 3px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.5s 0.2s;
 
     //   &__after {
 
     //   }
-   &-video {
-       height: 80vh;
-       width: 100%;
-       padding: 1rem;
-
-   }
+    &-video {
+      height: 80vh;
+      width: 100%;
+      padding: 1rem;
     }
-
-
+  }
 }
