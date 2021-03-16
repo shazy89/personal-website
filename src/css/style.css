@@ -440,6 +440,9 @@ body {
   position: absolute;
   top: 40%;
   left: 50%; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-text__box {
+      width: 90%; } }
 
 .heading-text__parent {
   -webkit-backface-visibility: hidden;
@@ -455,6 +458,10 @@ body {
   animation: leftToRight 2s ease-in 2.3s; }
   .heading-text__first-1 {
     opacity: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-text__first {
+      font-size: 6rem;
+      letter-spacing: 1rem; } }
 
 .heading-text__second {
   display: block;
@@ -466,6 +473,10 @@ body {
   animation: rightToleft 2s ease-in 2.3s; }
   .heading-text__second-2 {
     opacity: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-text__second {
+      font-size: 2.5rem;
+      letter-spacing: .4rem; } }
 
 .u-center-text {
   text-align: center !important; }
@@ -573,6 +584,13 @@ body {
     -webkit-animation: bounceOutUp 3s ease-in 0.4s;
     animation: bounceOutUp 3s ease-in 0.4s;
     box-shadow: 4rem 5.5rem 2rem -1rem rgba(66, 66, 66, 0.27); }
+    @media only screen and (max-width: 56.25em) {
+      .header__socialmedia-icons {
+        left: 71%; } }
+    @media only screen and (max-width: 37.5em) {
+      .header__socialmedia-icons {
+        top: 91%;
+        left: 60%; } }
   .header__triger-animation {
     -webkit-animation: bounceOutUp 3s ease-in 0.4s;
     animation: bounceOutUp 3s ease-in 0.4s; }
@@ -582,6 +600,9 @@ body {
     transition: all 0.4s; }
     .header__socialmedia-link:link:not(:last-child), .header__socialmedia-link:visited:not(:last-child) {
       margin-right: 6rem; }
+      @media only screen and (max-width: 37.5em) {
+        .header__socialmedia-link:link:not(:last-child), .header__socialmedia-link:visited:not(:last-child) {
+          margin-right: 2rem; } }
   .header__socialmedia-link:hover, .header__socialmedia-link:active {
     transform: rotate(32deg) scale(1.3); }
 
