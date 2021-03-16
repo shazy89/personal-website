@@ -2,17 +2,52 @@
 .hamburger {
 
   &__button {
+
       height: 7rem;
       width: 7rem;
+      position: fixed;
+      top: 6rem;
+      right: 6rem;
       border-radius: 50%;
+      text-align: center;
       cursor: pointer;
       outline: none;
       transition: all 0.3s;
-      color: white;
-      background: none;
-      text-decoration: none;
+      background-color: $color-white;
+      z-index: 9999;
+      box-shadow: 0 1rem 3rem rgba($color-black, .3);
+
 
   }
+  &__icon {
+    position: relative;
+    margin-top: 2rem;
+    &,
+    &::before,
+    &::after  {
+      width: 3rem;
+      height: 2px;
+      background-color: black;
+      display: inline-block;
+    }
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all .2s;
+    }
+    &::before { top: -.8rem; }
+    &::after { top: .8rem; }
+  }
+  // effect to the button
+  &__button:hover &__icon::before {
+    top: -1rem;
+   }
+  &__button:hover &__icon::after {
+    top: 1rem;
+  }
+//------------------
   &__background {
 
   }

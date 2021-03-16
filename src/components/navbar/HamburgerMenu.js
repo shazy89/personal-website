@@ -3,7 +3,10 @@ import React from "react";
 const HamburgerMenu = () => {
   return (
     <div className="hamburger">
-      <button className="hamburger__button"></button>
+      <button className="hamburger__button">
+        {" "}
+        <span class="hamburger__icon">&nbsp;</span>
+      </button>
       <div className="hamburger__background">
         <nav className="hamburger__nav">
           <ul className="hamburger__list">

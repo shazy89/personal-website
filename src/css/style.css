@@ -191,13 +191,38 @@
   .hamburger__button {
     height: 7rem;
     width: 7rem;
+    position: fixed;
+    top: 6rem;
+    right: 6rem;
     border-radius: 50%;
+    text-align: center;
     cursor: pointer;
     outline: none;
     transition: all 0.3s;
-    color: white;
-    background: none;
-    text-decoration: none; } }
+    background-color: whitesmoke;
+    z-index: 9999;
+    box-shadow: 0 1rem 3rem rgba(29, 29, 29, 0.3); }
+  .hamburger__icon {
+    position: relative;
+    margin-top: 2rem; }
+    .hamburger__icon, .hamburger__icon::before, .hamburger__icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: black;
+      display: inline-block; }
+    .hamburger__icon::before, .hamburger__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all .2s; }
+    .hamburger__icon::before {
+      top: -.8rem; }
+    .hamburger__icon::after {
+      top: .8rem; }
+  .hamburger__button:hover .hamburger__icon::before {
+    top: -1rem; }
+  .hamburger__button:hover .hamburger__icon::after {
+    top: 1rem; } }
 
 @-webkit-keyframes bounceIn {
   0%, 20%, 40%, 60%, 80%, 100% {
