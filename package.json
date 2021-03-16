@@ -32,6 +32,7 @@
     "eject": "react-scripts eject",
     "watch:scss": "node-sass src/scss/main.scss src/css/style.css -w",
     "compile:sass": "node-sass src/scss/main.scss src/css/style.comp.css",
+    "autoprefixer:css": "postcss --use autoprefixer -b 'last 1 versions' src/css/style.comp.css -o src/css/style.prefix.css",
     "compress:css": "node-sass src/css/style.comp.css src/css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass compress:css"
 
