@@ -26,9 +26,9 @@ body {
     padding: 3rem;
 
 
-  //  @include respond(tab-port) {
-  //      padding: 0;
-  //  }
+    @include respond(tab-port) {
+        padding: 0;
+    }
 }
 // selected text
  // ::selection {

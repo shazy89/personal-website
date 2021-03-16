@@ -1,24 +1,25 @@
-@include respond(tab-port) {
+
 .hamburger {
 
   &__button {
-
-      height: 7rem;
-      width: 7rem;
-      position: fixed;
-      top: 6rem;
-      right: 6rem;
-      border-radius: 50%;
-      text-align: center;
-      cursor: pointer;
-      outline: none;
-      transition: all 0.3s;
-      background-color: $color-white;
-      z-index: 9999;
-      box-shadow: 0 1rem 3rem rgba($color-black, .3);
-
-
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    border: 1.5px solid $color-light-grey;
+    top: 6rem;
+    right: 6rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s;
+    background-color: $color-white;
+    z-index: 2000 ;
+    box-shadow: 0 1rem 3rem rgba($color-black, .3);
   }
+
+
+
   &__icon {
     position: relative;
     margin-top: 2rem;
@@ -49,16 +50,68 @@
   }
 //------------------
   &__background {
-
+    background-image: linear-gradient(
+      to left bottom,
+      $color-light-pink,
+      $color-light-grey,
+      $color-medium-dark-grey
+    );
+    height: 85vh;
+    width: 76%;
+    position: fixed;
+    z-index: 1500;
+    top: -7.5rem;
+    right: -13.5rem;
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    border-radius: 50%;
+    box-shadow: 0 1rem 3rem rgba($color-black, .3);
   }
-  &__nav {
+ // &__nav {
+ //   list-style: none;
+ //   text-align: center;
+ //   height: 100vh;
+ //   transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+ // }
 
-  }
+
   &__list {
-      
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
   }
   &__item {
-      
+    margin: 1rem;
+    
   }
+  &__link {
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: $color-black;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+        background-size: 220%;
+        transition: all .4s;
+
+        span {
+            margin-right: 1.5rem;
+            display: inline-block;
+        }
+    }
+    
+    &:hover,
+    &:active {
+        background-position: 100%;
+        color: $color-black;
+        transform: translateX(1rem);
+    }
 }
 }
