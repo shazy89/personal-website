@@ -15,6 +15,10 @@
 
         -webkit-filter: hue-rotate(299deg);
         filter: hue-rotate(299deg);
+        @include respond(phone) {
+            
+            height: 70vh;
+          }
     }
     &__img{
         width: 35%;
@@ -24,8 +28,16 @@
         background-position: center;
         position: absolute;
         bottom: 0.1rem;
-
+        z-index: -1;
         background-repeat: no-repeat;
+        @include respond(phone) {
+            
+            background-size: 100%;
+
+            width: 53%;
+            height: 33rem;
+        
+          }
     }
     &__content{
         width: 65%;

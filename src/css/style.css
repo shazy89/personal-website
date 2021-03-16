@@ -51,6 +51,9 @@
           transform: scale(1.2) translateY(-0.5rem);
           box-shadow: 0 2.5rem 4rem rgba(29, 29, 29, 0.5);
           z-index: 20; }
+          @media only screen and (max-width: 37.5em) {
+            .card__heading__img-all:hover {
+              transform: scale(1.4) translateY(-0.5rem); } }
         @media only screen and (max-width: 75em) {
           .card__heading__img-all {
             width: 22%;
@@ -185,6 +188,9 @@
   z-index: -1;
   -webkit-filter: hue-rotate(299deg);
   filter: hue-rotate(299deg); }
+  @media only screen and (max-width: 37.5em) {
+    .about-me__container {
+      height: 70vh; } }
 
 .about-me__img {
   width: 35%;
@@ -194,7 +200,13 @@
   background-position: center;
   position: absolute;
   bottom: 0.1rem;
+  z-index: -1;
   background-repeat: no-repeat; }
+  @media only screen and (max-width: 37.5em) {
+    .about-me__img {
+      background-size: 100%;
+      width: 53%;
+      height: 33rem; } }
 
 .about-me__content {
   width: 65%;
@@ -234,6 +246,10 @@
   background-color: whitesmoke;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(29, 29, 29, 0.3); }
+  @media only screen and (max-width: 37.5em) {
+    .hamburger__button {
+      top: 3rem;
+      right: 3rem; } }
 
 .hamburger__icon {
   position: relative;

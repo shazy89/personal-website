@@ -71,6 +71,9 @@
           transform: scale(1.2) translateY(-0.5rem);
           box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
           z-index: 20;
+          @include respond(phone) {
+            transform: scale(1.4) translateY(-0.5rem);
+          }
         }
         @include respond(tab-land) {
           width: 22%;

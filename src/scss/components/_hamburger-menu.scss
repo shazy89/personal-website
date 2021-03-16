@@ -16,6 +16,10 @@
     background-color: $color-white;
     z-index: 2000 ;
     box-shadow: 0 1rem 3rem rgba($color-black, .3);
+    @include respond(phone) {
+      top: 3rem;
+    right: 3rem;
+    }
   }
 
 
