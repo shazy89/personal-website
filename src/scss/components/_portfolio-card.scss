@@ -29,24 +29,23 @@
       font-weight: 300;
       text-align: right;
       position: absolute;
-      top: 18rem;
+      top: 16rem;
       right: 3.5rem;
       width: 60%;
+      line-height: 1.4;
       @include respond(tab-land) {
         font-size: 3.4rem;
       }
-      @include respond(phone) {
-        font-size: 2.4rem;
-      }
+
       &__span {
         padding: 1rem 1.5rem;
         background-image: linear-gradient(
           to right top,
-          #574b5c,
-          #736379,
-          #907d98,
-          #ae98b7,
-          #cdb3d8
+          #574b5ccb,
+          #736379c5,
+          #907d98c2,
+          #ae98b7c7,
+          #cdb3d8cb
         );
         -webkit-box-decoration-break: clone;
                 box-decoration-break: clone;
