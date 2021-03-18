@@ -17,7 +17,22 @@
   // display: flex;
   // justify-content: flex-start;
   // align-items: flex-end;
-
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-light-grey, 0.5),
+      rgba($color-dark-grey, 0.5)
+    ),
+    url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_860/v1615845179/portfolio/artem-sapegin-b18TRXc8UPQ-unsplash_mtq6re.jpg") !important;
+  }
+  @include respond(phone) {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-light-grey, 0.5),
+      rgba($color-dark-grey, 0.5)
+    ),
+    url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_420/v1615845179/portfolio/artem-sapegin-b18TRXc8UPQ-unsplash_mtq6re.jpg") !important;
+  }
   &__logo-box {
     position: absolute;
     top: 1rem;
