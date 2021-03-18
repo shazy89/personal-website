@@ -3,7 +3,7 @@
 [https://edshaziman.com/](https://edshaziman.com/)
 
 _This project is my personal website built using React, SASS, CSS, and HTML5._
-_Contains my personal portfolio projects and more info about me._
+_Contains my personal portfolio projects, resume and more info about me._
 
 _I've avoided using CSS frameworks for this project to show my vanilla CSS and SASS understanding._
 _I think a person who knows vanilla CSS can understand any CSS framework without having any difficulties_
