@@ -30,7 +30,7 @@
           font-size: 3.4rem; } }
       .card__heading__text__span {
         padding: 1rem 1.5rem;
-        background-image: linear-gradient(to right top, #574b5ccb, #736379c5, #907d98c2, #ae98b7c7, #cdb3d8cb);
+        background-image: linear-gradient(to right top, #574b5c, #736379, #907d98, #ae98b7, #cdb3d8);
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
         color: #e2e2e2; }
@@ -65,7 +65,7 @@
         top: 1.7rem; }
         @media only screen and (max-width: 37.5em) {
           .card__heading__img-1 {
-            left: 12rem; } }
+            left: 10rem; } }
       .card__heading__img-2 {
         left: 2rem;
         top: 3.7rem; }
@@ -74,7 +74,7 @@
         top: 9.7rem; }
         @media only screen and (max-width: 37.5em) {
           .card__heading__img-3 {
-            left: 8rem; } }
+            left: 6.5rem; } }
     @media only screen and (max-width: 75em) {
       .card__heading {
         height: 30rem; } }

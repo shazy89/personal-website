@@ -41,11 +41,11 @@
         padding: 1rem 1.5rem;
         background-image: linear-gradient(
           to right top,
-          #574b5ccb,
-          #736379c5,
-          #907d98c2,
-          #ae98b7c7,
-          #cdb3d8cb
+          #574b5c,
+          #736379,
+          #907d98,
+          #ae98b7,
+          #cdb3d8
         );
         -webkit-box-decoration-break: clone;
                 box-decoration-break: clone;
@@ -87,7 +87,7 @@
         left: 17rem;
         top: 1.7rem;
         @include respond(phone) {
-          left: 12rem;
+          left: 10rem;
         }
       }
       &-2 {
@@ -98,7 +98,7 @@
         left: 10rem;
         top: 9.7rem;
         @include respond(phone) {
-          left: 8rem;
+          left: 6.5rem;
         }
       }
     }
