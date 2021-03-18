@@ -2,7 +2,7 @@ import React from "react";
 
 const SectionAbout = () => {
   return (
-    <div id="section-about" className="section-about">
+    <section id="section-about" className="section-about">
       <div className="about-me__container">
         <div className="about-me__img"></div>
 
@@ -24,7 +24,7 @@ const SectionAbout = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -31,9 +31,9 @@ export const projects = [
       "postgresql",
     ],
     imgs: [
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1607092841/portfolio/Screen_Shot_2020-12-02_at_2.16.06_PM_rctf76.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1607092844/portfolio/Screen_Shot_2020-12-02_at_2.16.17_PM_i3zicb.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1607092846/portfolio/Screen_Shot_2020-12-02_at_2.16.32_PM_jgwlme.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1607092841/portfolio/Screen_Shot_2020-12-02_at_2.16.06_PM_rctf76.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1607092844/portfolio/Screen_Shot_2020-12-02_at_2.16.17_PM_i3zicb.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1607092846/portfolio/Screen_Shot_2020-12-02_at_2.16.32_PM_jgwlme.png",
     ],
   },
   {
@@ -71,9 +71,9 @@ export const projects = [
       "postgresql",
     ],
     imgs: [
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_541/v1610213769/Screen_Shot_2021-01-09_at_12.35.15_PM_zxwj2y.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605120212/portfolio/rm3_vgeuvx.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605120194/portfolio/rm1_dpkrja.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1610213769/Screen_Shot_2021-01-09_at_12.35.15_PM_zxwj2y.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605120212/portfolio/rm3_vgeuvx.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605120194/portfolio/rm1_dpkrja.png",
     ],
   },
   {
@@ -101,9 +101,9 @@ export const projects = [
       "postgresql",
     ],
     imgs: [
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605120182/portfolio/fm3_jo6kqj.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605120172/portfolio/fm2_ouxhqp.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605119995/portfolio/fm1_p1oqsy.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605120182/portfolio/fm3_jo6kqj.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605120172/portfolio/fm2_ouxhqp.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605119995/portfolio/fm1_p1oqsy.png",
     ],
   },
   {
@@ -124,9 +124,9 @@ export const projects = [
     ],
     technologiesForIcons: ["rubyonrails", "html", "css", "postgresql"],
     imgs: [
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605120248/portfolio/ot3_vjnp1a.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605120241/portfolio/ot2_stmumv.png",
-      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_595/v1605120233/portfolio/ot1_x11h5a.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605120248/portfolio/ot3_vjnp1a.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605120241/portfolio/ot2_stmumv.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_200/v1605120233/portfolio/ot1_x11h5a.png",
     ],
   },
 ];
