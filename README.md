@@ -1,4 +1,4 @@
-# ED Shazimans Website
+# Ed Shazimans Website
 
 [https://edshaziman.com/](https://edshaziman.com/)
 
