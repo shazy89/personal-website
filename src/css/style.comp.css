@@ -21,15 +21,13 @@
       font-weight: 300;
       text-align: right;
       position: absolute;
-      top: 18rem;
+      top: 16rem;
       right: 3.5rem;
-      width: 60%; }
+      width: 60%;
+      line-height: 1.4; }
       @media only screen and (max-width: 75em) {
         .card__heading__text {
           font-size: 3.4rem; } }
-      @media only screen and (max-width: 37.5em) {
-        .card__heading__text {
-          font-size: 2.4rem; } }
       .card__heading__text__span {
         padding: 1rem 1.5rem;
         background-image: linear-gradient(to right top, #574b5c, #736379, #907d98, #ae98b7, #cdb3d8);
@@ -67,7 +65,7 @@
         top: 1.7rem; }
         @media only screen and (max-width: 37.5em) {
           .card__heading__img-1 {
-            left: 12rem; } }
+            left: 10rem; } }
       .card__heading__img-2 {
         left: 2rem;
         top: 3.7rem; }
@@ -76,7 +74,7 @@
         top: 9.7rem; }
         @media only screen and (max-width: 37.5em) {
           .card__heading__img-3 {
-            left: 8rem; } }
+            left: 6.5rem; } }
     @media only screen and (max-width: 75em) {
       .card__heading {
         height: 30rem; } }
@@ -188,14 +186,18 @@
   z-index: -1;
   -webkit-filter: hue-rotate(299deg);
   filter: hue-rotate(299deg); }
+  @media only screen and (max-width: 56.25em) {
+    .about-me__container {
+      background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.6), rgba(119, 119, 119, 0.6)), url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_825/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg") !important; } }
   @media only screen and (max-width: 37.5em) {
     .about-me__container {
-      height: 76vh; } }
+      height: 76vh;
+      background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.6), rgba(119, 119, 119, 0.6)), url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_450/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg") !important; } }
 
 .about-me__img {
   width: 35%;
   height: 50rem;
-  background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/v1615846326/portfolio/me_ocryct.png");
+  background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1615846326/portfolio/me_ocryct.png");
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -206,7 +208,8 @@
     .about-me__img {
       background-size: 100%;
       width: 56%;
-      height: 30rem; } }
+      height: 30rem;
+      background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_304/v1615846326/portfolio/me_ocryct.png") !important; } }
 
 .about-me__content {
   width: 65%;
@@ -633,6 +636,12 @@ body {
   clip-path: polygon(0 18%, 100% 5%, 100% 83%, 0 100%);
   -webkit-filter: hue-rotate(299deg);
   filter: hue-rotate(299deg); }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.5), rgba(119, 119, 119, 0.5)), url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_860/v1615845179/portfolio/artem-sapegin-b18TRXc8UPQ-unsplash_mtq6re.jpg") !important; } }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.5), rgba(119, 119, 119, 0.5)), url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_420/v1615845179/portfolio/artem-sapegin-b18TRXc8UPQ-unsplash_mtq6re.jpg") !important; } }
   .header__logo-box {
     position: absolute;
     top: 1rem;
