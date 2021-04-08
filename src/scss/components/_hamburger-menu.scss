@@ -69,12 +69,15 @@
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
     border-radius: 50%;
     box-shadow: 0 1rem 3rem rgba($color-black, 0.3);
+    opacity: 0;
+    transition: all .3s ease-in;
     @include respond(phone) {
       height: 60vh;
       width: 100%;
       top: -2.8rem;
       right: -13.3rem;
     }
+
   }
   // &__nav {
   //   list-style: none;
@@ -91,6 +94,8 @@
     list-style: none;
     text-align: center;
     width: 100%;
+    opacity: 0;
+    transition: all .4s ease;
     @include respond(phone) {
       transform: translate(-55%, -30%);
     }
@@ -130,4 +135,7 @@
       transform: translateX(1rem);
     }
   }
+}
+.visible {
+  opacity: 1;
 }

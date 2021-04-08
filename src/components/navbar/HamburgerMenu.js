@@ -5,16 +5,17 @@ const HamburgerMenu = ({ handleTrigger, trigger }) => {
   const onResumeClick = () => {
     window.open(Pdf);
   };
+  let openMenu = trigger ? "visible" : "";
   return (
     <div className="hamburger">
       <button onClick={handleTrigger} className="hamburger__button">
         {" "}
         <span className="hamburger__icon">&nbsp;</span>
       </button>
-      {trigger && (
-        <div className="hamburger__background">
+      {
+        <div className={`hamburger__background ${openMenu}`}>
           <nav className="hamburger__nav">
-            <ul className="hamburger__list">
+            <ul className={`hamburger__list ${openMenu}`}>
               <li className="hamburger__item">
                 <a
                   href="#section_portfolio"
@@ -38,7 +39,7 @@ const HamburgerMenu = ({ handleTrigger, trigger }) => {
             </ul>
           </nav>
         </div>
-      )}
+      }
     </div>
   );
 };
