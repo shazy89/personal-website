@@ -194,22 +194,19 @@
       height: 76vh;
       background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.6), rgba(119, 119, 119, 0.6)), url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_450/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg") !important; } }
 
+.about-me_imgBox {
+  width: 20rem;
+  height: 20rem; }
+
 .about-me__img {
-  width: 35%;
-  height: 50rem;
-  background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1615846326/portfolio/me_ocryct.png");
-  background-size: cover;
-  background-position: center;
+  width: 40%;
+  height: auto;
   position: absolute;
   bottom: -0.1rem;
-  z-index: -1;
-  background-repeat: no-repeat; }
+  z-index: -1; }
   @media only screen and (max-width: 37.5em) {
     .about-me__img {
-      background-size: 100%;
-      width: 56%;
-      height: 30rem;
-      background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_304/v1615846326/portfolio/me_ocryct.png") !important; } }
+      width: 60%; } }
 
 .about-me__content {
   width: 65%;
@@ -290,7 +287,7 @@
   border-radius: 50%;
   box-shadow: 0 1rem 3rem rgba(29, 29, 29, 0.3);
   opacity: 0;
-  transition: all .3s ease-in; }
+  transition: all .3s ease-out; }
   @media only screen and (max-width: 37.5em) {
     .hamburger__background {
       height: 60vh;

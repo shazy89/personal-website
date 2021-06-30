@@ -4,7 +4,14 @@ const SectionAbout = () => {
   return (
     <section id="section-about" className="section-about">
       <div className="about-me__container">
-        <div className="about-me__img"></div>
+        <div className="about-me_imgBox">
+          <img
+            className="about-me__img"
+            src="https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1615846326/portfolio/me_ocryct.png"
+            alt=""
+            srcset=""
+          />
+        </div>
 
         <div className="about-me__content u-margin-top-huge ">
           <h3 className="about-me__header">About Me</h3>
