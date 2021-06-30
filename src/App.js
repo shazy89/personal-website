@@ -13,11 +13,24 @@ const App = () => {
   const handleTrigger = () => (trigger ? setTrigger(false) : setTrigger(true));
   return (
     <>
-      <Media query="(max-width: 899px)">
-        <Hamburger handleTrigger={handleTrigger} trigger={trigger} />
-      </Media>
-      <Media query="(min-width: 900px)">
-        <Navigation />
+      <Media
+        queries={{
+          small: "(max-width: 899px)",
+          large: "(min-width: 900px)"
+        }}
+      >
+        {(matches) => (
+          <>
+            {matches.small ? (
+              <Hamburger
+                handleTrigger={handleTrigger}
+                trigger={trigger}
+                setTrigger={setTrigger}
+              />
+            ) : null}
+            {matches.large ? <Navigation /> : null}
+          </>
+        )}
       </Media>
 
       <Header />

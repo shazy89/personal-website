@@ -1,7 +1,7 @@
 import React from "react";
 import Pdf from "../../assets/Ed_Resume.pdf";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-const HamburgerMenu = ({ handleTrigger, trigger }) => {
+const HamburgerMenu = ({ handleTrigger, trigger, setTrigger }) => {
   const onResumeClick = () => {
     window.open(Pdf);
   };
@@ -26,7 +26,7 @@ const HamburgerMenu = ({ handleTrigger, trigger }) => {
                   Resume
                 </a>
               </li>
-              <li className="hamburger__item">
+              <li className="hamburger__item" onClick={() => setTrigger(false)}>
                 <AnchorLink
                   className="hamburger__link"
                   href="#section_portfolio"
@@ -35,7 +35,7 @@ const HamburgerMenu = ({ handleTrigger, trigger }) => {
                   Portfolio
                 </AnchorLink>
               </li>
-              <li className="hamburger__item">
+              <li className="hamburger__item" onClick={() => setTrigger(false)}>
                 <AnchorLink className="hamburger__link" href="#section-about">
                   {" "}
                   About
