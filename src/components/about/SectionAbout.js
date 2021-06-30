@@ -8,8 +8,7 @@ const SectionAbout = () => {
           <img
             className="about-me__img"
             src="https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1615846326/portfolio/me_ocryct.png"
-            alt=""
-            srcset=""
+            alt="Ed Shaziman"
           />
         </div>
 

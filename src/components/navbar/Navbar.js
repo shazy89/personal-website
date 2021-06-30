@@ -1,10 +1,11 @@
 import React from "react";
 import Pdf from "../../assets/Ed_Resume.pdf";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const Navbar = () => {
   const onResumeClick = () => {
     window.open(Pdf);
   };
+
   return (
     <nav className="navigation">
       <div className="row navigation__nav">
@@ -20,14 +21,16 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navigation__item">
-            <a href="#section_portfolio" className="navigation__link">
+            <AnchorLink className="navigation__link" href="#section_portfolio">
+              {" "}
               Portfolio
-            </a>
+            </AnchorLink>
           </li>
           <li className="navigation__item">
-            <a href="#section-about" className="navigation__link">
+            <AnchorLink className="navigation__link" href="#section-about">
+              {" "}
               About
-            </a>
+            </AnchorLink>
           </li>
         </ul>
       </div>

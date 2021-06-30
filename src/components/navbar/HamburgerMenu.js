@@ -1,21 +1,21 @@
 import React from "react";
 import Pdf from "../../assets/Ed_Resume.pdf";
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 const HamburgerMenu = ({ handleTrigger, trigger }) => {
   const onResumeClick = () => {
     window.open(Pdf);
   };
-  let openMenu = trigger ? "visible" : "";
+
   return (
     <div className="hamburger">
       <button onClick={handleTrigger} className="hamburger__button">
         {" "}
         <span className="hamburger__icon">&nbsp;</span>
       </button>
-      {
-        <div className={`hamburger__background ${openMenu}`}>
+      {trigger ? (
+        <div className={`hamburger__background `}>
           <nav className="hamburger__nav">
-            <ul className={`hamburger__list ${openMenu}`}>
+            <ul className={`hamburger__list `}>
               <li className="hamburger__item">
                 <a
                   href="#section_portfolio"
@@ -27,19 +27,24 @@ const HamburgerMenu = ({ handleTrigger, trigger }) => {
                 </a>
               </li>
               <li className="hamburger__item">
-                <a href="#section_portfolio" className="hamburger__link">
+                <AnchorLink
+                  className="hamburger__link"
+                  href="#section_portfolio"
+                >
+                  {" "}
                   Portfolio
-                </a>
+                </AnchorLink>
               </li>
               <li className="hamburger__item">
-                <a href="#section-about" className="hamburger__link">
-                  About Me
-                </a>
+                <AnchorLink className="hamburger__link" href="#section-about">
+                  {" "}
+                  About
+                </AnchorLink>
               </li>
             </ul>
           </nav>
         </div>
-      }
+      ) : null}
     </div>
   );
 };
