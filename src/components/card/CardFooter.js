@@ -1,15 +1,28 @@
 import React from "react";
 
-const CardFooter = ({ github, mobGithub, demo }) => {
+const CardFooter = ({ project: { github, mobGithub, demo, webApp } }) => {
+  console.log(demo);
   return (
     <div className="card__footer">
-      <a className="card__link" href={demo} target="_blank" rel="noreferrer">
-        Demo
-      </a>
+      {demo ? (
+        <a className="card__link" href={demo} target="_blank" rel="noreferrer">
+          Demo
+        </a>
+      ) : null}
+      {webApp ? (
+        <a
+          className="card__link"
+          href={webApp}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Website
+        </a>
+      ) : null}
       <a className="card__link" href={github} target="_blank" rel="noreferrer">
         GitHub{" "}
       </a>
-      {mobGithub && (
+      {mobGithub ? (
         <a
           className="card__link"
           href={mobGithub}
@@ -18,7 +31,7 @@ const CardFooter = ({ github, mobGithub, demo }) => {
         >
           GitHub MobileApp{" "}
         </a>
-      )}
+      ) : null}
     </div>
   );
 };

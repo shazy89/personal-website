@@ -89,6 +89,7 @@
     letter-spacing: 0.1rem;
     padding: 1.3rem;
     color: #353535;
+    overflow: auto;
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 75em) {

@@ -14,11 +14,7 @@ const Card = ({ project }) => {
               info={project.info}
               technologiesForIcons={project.technologiesForIcons}
             />
-            <CardFooter
-              mobGithub={project.mobGithub}
-              github={project.github}
-              demo={project.demo}
-            />
+            <CardFooter project={project} />
           </div>
         </Parallax>
       </div>

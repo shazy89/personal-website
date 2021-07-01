@@ -11,9 +11,10 @@ const Portfolio = () => {
   const secondRow = projects
     .slice(2, 4)
     .map((project) => <Card key={project.id} project={project} />);
-  const displayCards = projects.map((project) => (
-    <Card key={project.id} project={project} />
-  ));
+  const thirdRow = projects
+    .slice(4)
+    .map((project) => <Card key={project.id} project={project} />);
+
   return (
     <section
       id="section_portfolio"
@@ -28,6 +29,7 @@ const Portfolio = () => {
 
       <div className="row">{firsRow}</div>
       <div className="row">{secondRow}</div>
+      <div className="row">{thirdRow}</div>
     </section>
   );
 };
