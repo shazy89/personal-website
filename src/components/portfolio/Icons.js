@@ -1,5 +1,11 @@
 import { IoLogoReact, IoLogoCss3, IoLogoJavascript } from "react-icons/io5";
-import { SiRedux, SiHtml5, SiPostgresql } from "react-icons/si";
+import {
+  SiRedux,
+  SiHtml5,
+  SiPostgresql,
+  SiMongodb,
+  SiSass
+} from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 
 export const icons = {
@@ -10,4 +16,6 @@ export const icons = {
   rubyonrails: <DiRuby color="red" />,
   javascript: <IoLogoJavascript color="#efd819" />,
   postgresql: <SiPostgresql color="#3737a0" />,
+  mongo: <SiMongodb color="#25ba88cc" />,
+  sass: <SiSass color="#ce649a" />
 };
