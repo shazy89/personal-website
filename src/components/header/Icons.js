@@ -5,14 +5,11 @@ import EmailIcon from "@material-ui/icons/Email";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import triggerAnimations from "../../hooks/triggerAnimations";
+import { Parallax } from "react-scroll-parallax";
 
 const Icons = () => {
-  const [
-    triggerAnimation,
-    onAnimationStart,
-    onAnimationEnd,
-    trigger,
-  ] = triggerAnimations();
+  const [triggerAnimation, onAnimationStart, onAnimationEnd, trigger] =
+    triggerAnimations();
   return (
     <div className="header__socialmedia-icons">
       <a
@@ -24,6 +21,7 @@ const Icons = () => {
       >
         <EmailIcon style={{ fontSize: "4.3rem" }} />
       </a>
+
       <a
         className="header__socialmedia-link"
         target="_blank"
@@ -32,6 +30,7 @@ const Icons = () => {
       >
         <GitHubIcon style={{ fontSize: "4.3rem" }} />
       </a>
+
       <a
         className="header__socialmedia-link"
         target="_blank"
