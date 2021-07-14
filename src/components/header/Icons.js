@@ -5,7 +5,6 @@ import EmailIcon from "@material-ui/icons/Email";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import triggerAnimations from "../../hooks/triggerAnimations";
-import { Parallax } from "react-scroll-parallax";
 
 const Icons = () => {
   const [triggerAnimation, onAnimationStart, onAnimationEnd, trigger] =

@@ -6,7 +6,7 @@ import Navigation from "./components/navbar/Navbar";
 import Hamburger from "./components/navbar/HamburgerMenu";
 import Portfolio from "./components/portfolio/Portfolio";
 import SectionAbout from "./components/about/SectionAbout";
-import { Parallax } from "react-scroll-parallax";
+
 const App = () => {
   const [trigger, setTrigger] = useState(false);
 

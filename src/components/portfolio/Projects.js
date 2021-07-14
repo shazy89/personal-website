@@ -5,7 +5,7 @@ export const projects = [
     github: "https://github.com/shazy89/culina-dashboard",
     mobGithub: "",
     webApp: "https://culina.website/",
-    demo: "",
+    demo: "https://www.youtube.com/watch?v=yfwoDKNhJQg&list=PL0zbnzgKNis1xNPhk3jmGx_KhQgK1SzaS&index=13",
     info: "Dashboard of a Saas construction App. Admin users can add new companies and manage current companies. Each company can have employee users added to them. Projects and work orders can be created to track ongoing work. Charts are displayed to show revenue, total employee count, total user count, and total project data.",
     technologies: [
       "Javascript",
