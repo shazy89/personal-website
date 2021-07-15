@@ -35,9 +35,45 @@ export const projects = [
       "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_300/v1625076618/projects/Screen_Shot_2021-06-30_at_7.15.42_PM_bwbzic.png"
     ]
   },
-
   {
     id: 2,
+    name: "RFuW Engineering",
+    github: "https://github.com/shazy89/rfuw-website",
+    mobGithub: "",
+    webApp: "https://www.rfuw-engineering.com/",
+    demo: "",
+    info: "RFuW website is an Upwork project built for RFuW Engineering. The website has a Dashboard, by using the Login page you can access and manage it. There are 7 pages, Home, Products, Single Product, About Us, News, Sales Rep, and Contact Us.",
+    technologies: [
+      "Javascript",
+      "React",
+      "React-Router",
+      "Redux",
+      "Express Js",
+      "Thunk",
+      "CSS",
+      "SCSS",
+      "JWT Auth",
+      "Mongo Db",
+      "Cloudinary"
+    ],
+    technologiesForIcons: [
+      "javascript",
+      "react",
+      "redux",
+      "html",
+      "mongo",
+      "css",
+      "sass"
+    ],
+    imgs: [
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_400/v1626267728/projects/Screen_Shot_2021-07-13_at_4.22.44_PM_kafcge.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_400/v1626267861/projects/Screen_Shot_2021-07-14_at_3.03.48_PM_wyc8kb.png",
+      "https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_400/v1625073667/projects/Screen_Shot_2021-06-30_at_7.16.39_PM_rksstt.png"
+    ]
+  },
+
+  {
+    id: 3,
     name: "RentMe",
     github: "https://github.com/shazy89/rent-me-web",
     mobGithub: "https://github.com/shazy89/RentMe-mobile",
@@ -77,7 +113,7 @@ export const projects = [
     ]
   },
   {
-    id: 5,
+    id: 6,
     name: "friends",
     github: "https://github.com/shazy89/friends_app",
     mobGithub: "",
@@ -113,7 +149,7 @@ export const projects = [
     ]
   },
   {
-    id: 3,
+    id: 4,
     name: "FootBall Masters",
     github: "https://github.com/shazy89/football-masters",
     mobGithub: "",
@@ -142,7 +178,7 @@ export const projects = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "OneTouch",
     github: "https://github.com/shazy89/One-Touch",
     mobGithub: "",
