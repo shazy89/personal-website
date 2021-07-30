@@ -3,11 +3,13 @@ import Card from "../card/Card";
 import video from "../../assets/images/portfolio/coding.mp4";
 import video1 from "../../assets/images/portfolio/Coding_technology.mp4";
 import { projects } from "./Projects";
-
+import AnimatedCard from "../card/AnimatedCard";
 const Portfolio = () => {
-  const firsRow = projects
-    .slice(0, 2)
-    .map((project) => <Card key={project.id} project={project} />);
+  const firsRow = projects.slice(0, 2).map((project) => (
+    <AnimatedCard>
+      <Card key={project.id} project={project} />
+    </AnimatedCard>
+  ));
   const secondRow = projects
     .slice(2, 4)
     .map((project) => <Card key={project.id} project={project} />);

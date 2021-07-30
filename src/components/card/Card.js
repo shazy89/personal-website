@@ -7,7 +7,7 @@ const Card = ({ project }) => {
   return (
     <>
       <div className="col-1-of-2">
-        <div className="card">
+        <div className="card ">
           <CardHeading images={project.imgs} name={project.name} />
           <CardContent
             info={project.info}
@@ -16,6 +16,7 @@ const Card = ({ project }) => {
           <CardFooter project={project} />
         </div>
       </div>
+
       {/*trigger && <Modal demo={project.demo} name={project.name} /> */}
     </>
   );

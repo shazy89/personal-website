@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/web";
 //import { useControls } from "leva";
 const calc = (x, y, rect) => [
-  -(y - rect.top - rect.height / 2.3) / 5,
-  (x - rect.left - rect.width / 2.3) / 5,
-  1.2
+  -(y - rect.top - rect.height / 2) / 40,
+  (x - rect.left - rect.width / 2) / 40,
+  1.1
 ];
 const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
