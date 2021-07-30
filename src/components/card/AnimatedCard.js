@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/web";
-//import { useControls } from "leva";
+
 const calc = (x, y, rect) => [
   -(y - rect.top - rect.height / 2) / 40,
   (x - rect.left - rect.width / 2) / 40,
@@ -10,12 +10,8 @@ const trans = (x, y, s) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 function AnimatedCard({ children }) {
-  // const configList = Object.keys(config);
   const ref = useRef(null);
   const [xys, set] = useState([0, 0, 1]);
-  // const { preset } = useControls({
-  //   preset: { value: "default", options: configList }
-  // });
 
   const props = useSpring({ xys, config: config["slow"] });
 
