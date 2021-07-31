@@ -2,8 +2,8 @@ import { useRef, useState } from "react";
 import { useSpring, animated, config } from "@react-spring/web";
 
 const calc = (x, y, rect) => [
-  -(y - rect.top - rect.height / 2) / 40,
-  (x - rect.left - rect.width / 2) / 40,
+  -(y - rect.top - rect.height / 3) / 60,
+  (x - rect.left - rect.width / 3) / 60,
   1.1
 ];
 const trans = (x, y, s) =>
@@ -26,7 +26,7 @@ function AnimatedCard({ children }) {
           set(calc(e.clientX, e.clientY, rect));
         }}
       >
-        {children}
+        <div className="col-1-of-2">{children}</div>
       </animated.div>
     </div>
   );
