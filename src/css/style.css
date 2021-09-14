@@ -7,10 +7,14 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
-  width: 100%; }
+  width: 45%; }
   @media only screen and (max-width: 75em) {
     .card {
       height: 60rem; } }
+  .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
   .card__heading {
     height: 26rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
