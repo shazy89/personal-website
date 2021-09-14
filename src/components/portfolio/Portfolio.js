@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import Card from '../card/Card';
 import video from '../../assets/images/portfolio/coding.mp4';
 import { projects } from './Projects';
 
 const Portfolio = () => {
-  const displayProjects = projects.map((project) => (
-    <Card key={project.id} project={project} />
-  ));
+  const displayProjects = useMemo(
+    () =>
+      projects.map((project) => <Card key={project.id} project={project} />),
+    []
+  );
   return (
     <section
       id="section_portfolio"

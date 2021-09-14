@@ -10,6 +10,7 @@ const CardHeading = ({ images, name }) => {
     () =>
       images.map((image, index) => (
         <img
+          key={index}
           className={`${imageClassNames[index]}`}
           src={image}
           alt="Ed shazimans project"

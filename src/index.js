@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import App from './App';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import reportWebVitals from './reportWebVitals';
+//import reportWebVitals from './reportWebVitals';
 import './css/style.css';
 
 ReactDOM.render(

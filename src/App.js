@@ -33,6 +33,7 @@ const App = () => {
         )}
       </Media>
       <Header />
+
       <Portfolio />
       <SectionAbout />
     </>
