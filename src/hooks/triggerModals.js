@@ -1,4 +1,5 @@
-import { useState, useRef, useEffect } from "react";
+/* eslint-disable import/no-anonymous-default-export */
+import { useState, useRef, useEffect } from 'react';
 
 export default () => {
   const [trigger, setTrigger] = useState(false);
@@ -18,9 +19,9 @@ export default () => {
       }
     };
     useEffect(() => {
-      document.addEventListener("click", handleClick);
+      document.addEventListener('click', handleClick);
       return () => {
-        document.removeEventListener("click", handleClick);
+        document.removeEventListener('click', handleClick);
       };
     });
   };

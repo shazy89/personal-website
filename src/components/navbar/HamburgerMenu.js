@@ -1,6 +1,6 @@
-import React from "react";
-import Pdf from "../../assets/Ed_Resume.pdf";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+import React from 'react';
+import Pdf from '../../assets/Ed_Resume.pdf';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 const HamburgerMenu = ({ handleTrigger, trigger, setTrigger }) => {
   const onResumeClick = () => {
     window.open(Pdf);
@@ -9,7 +9,7 @@ const HamburgerMenu = ({ handleTrigger, trigger, setTrigger }) => {
   return (
     <div className="hamburger">
       <button onClick={handleTrigger} className="hamburger__button">
-        {" "}
+        {' '}
         <span className="hamburger__icon">&nbsp;</span>
       </button>
       {trigger ? (
@@ -19,7 +19,7 @@ const HamburgerMenu = ({ handleTrigger, trigger, setTrigger }) => {
               <li className="hamburger__item">
                 <a
                   href="#section_portfolio"
-                  href={require("../../assets/Ed_Resume.pdf")}
+                  href={require('../../assets/Ed_Resume.pdf')}
                   onClick={onResumeClick}
                   className="hamburger__link"
                 >
@@ -31,13 +31,13 @@ const HamburgerMenu = ({ handleTrigger, trigger, setTrigger }) => {
                   className="hamburger__link"
                   href="#section_portfolio"
                 >
-                  {" "}
+                  {' '}
                   Portfolio
                 </AnchorLink>
               </li>
               <li className="hamburger__item" onClick={() => setTrigger(false)}>
                 <AnchorLink className="hamburger__link" href="#section-about">
-                  {" "}
+                  {' '}
                   About
                 </AnchorLink>
               </li>

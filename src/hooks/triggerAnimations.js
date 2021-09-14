@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState } from 'react';
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const [trigger, setTriger] = useState(false);
   const [animations, setAnimations] = useState({

@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 
 const CardFooter = ({ project: { github, mobGithub, demo, webApp } }) => {
-  console.log(demo);
   return (
     <div className="card__footer">
       {demo ? (
@@ -20,7 +19,7 @@ const CardFooter = ({ project: { github, mobGithub, demo, webApp } }) => {
         </a>
       ) : null}
       <a className="card__link" href={github} target="_blank" rel="noreferrer">
-        GitHub{" "}
+        GitHub{' '}
       </a>
       {mobGithub ? (
         <a
@@ -29,7 +28,7 @@ const CardFooter = ({ project: { github, mobGithub, demo, webApp } }) => {
           target="_blank"
           rel="noreferrer"
         >
-          GitHub MobileApp{" "}
+          GitHub MobileApp{' '}
         </a>
       ) : null}
     </div>
