@@ -6,7 +6,7 @@ import CardFooter from './CardFooter';
 const Card = ({ project }) => {
   return (
     <>
-      <div className="card">
+      <div className="card u-margin-bottom-medium">
         <CardHeading images={project.imgs} name={project.name} />
         <CardContent
           info={project.info}
