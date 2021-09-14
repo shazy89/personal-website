@@ -1,18 +1,22 @@
 //import { IndeterminateCheckBox } from '@material-ui/icons';
-import React from 'react';
+import React, { useMemo } from 'react';
 const imageClassNames = {
   0: 'card__heading__img-all card__heading__img-1',
   1: 'card__heading__img-all card__heading__img-2',
   2: 'card__heading__img-all card__heading__img-3',
 };
 const CardHeading = ({ images, name }) => {
-  const displayImages = images.map((image, index) => (
-    <img
-      className={`${imageClassNames[index]}`}
-      src={image}
-      alt="Ed shazimans project"
-    />
-  ));
+  const displayImages = useMemo(
+    () =>
+      images.map((image, index) => (
+        <img
+          className={`${imageClassNames[index]}`}
+          src={image}
+          alt="Ed shazimans project"
+        />
+      )),
+    [images]
+  );
   return (
     <div className="card__heading">
       <h4 className="card__heading__text">
