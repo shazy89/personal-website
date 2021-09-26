@@ -2,16 +2,15 @@
   background-color: $color-dirty-white;
   height: 52rem;
   position: relative;
-  
+
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   border-radius: 3px;
   width: 90%;
   @include respond(tab-land) {
-
     height: 60rem;
-    width: 90%; 
+    width: 90%;
   }
   &_container {
     display: flex;
@@ -21,7 +20,7 @@
   &__heading {
     height: 26rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     background-image: linear-gradient(
       to left bottom,
       $color-light-pink,
@@ -53,13 +52,10 @@
           #cdb3d8
         );
         -webkit-box-decoration-break: clone;
-                box-decoration-break: clone;
+        box-decoration-break: clone;
         color: $card-text-color;
-        
       }
-
     }
-    // __img is the classname of html div
     &__img {
       position: relative;
       &-all {
@@ -108,10 +104,8 @@
       }
     }
     @include respond(tab-land) {
-
       height: 30rem;
     }
-  
   }
   &__content {
     &--container {
@@ -144,7 +138,6 @@
       }
     }
   }
-
   &__footer {
     display: flex;
     height: 6rem;
@@ -153,7 +146,6 @@
       height: 10rem;
     }
   }
-
   &__link {
     &:link,
     &:visited {
@@ -164,7 +156,6 @@
       padding: 1rem;
       transition: all 0.3s;
     }
-
     &:hover,
     &:active {
       background-color: rgba($color-light-grey, 0.5);
@@ -186,7 +177,6 @@
       transition: all 0.3s;
       outline: none;
       cursor: pointer;
-
       &:hover {
         background-color: rgba($color-light-grey, 0.5);
         cursor: pointer;
@@ -196,9 +186,8 @@
     }
   }
 }
-
 .grabbable {
-  cursor: move; 
+  cursor: move;
   cursor: grab;
   cursor: -webkit-grab;
   &:active {
@@ -206,4 +195,3 @@
     cursor: -webkit-grabbing;
   }
 }
-

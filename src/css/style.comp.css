@@ -3,14 +3,19 @@
   background-color: #eeeeeede;
   height: 52rem;
   position: relative;
-  box-shadow: 0 1.5rem 4rem rgba(29, 29, 29, 0.945);
+  box-shadow: 0 1.5rem 4rem rgba(29, 29, 29, 0.2);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 3px;
-  width: 100%; }
+  width: 90%; }
   @media only screen and (max-width: 75em) {
     .card {
-      height: 60rem; } }
+      height: 60rem;
+      width: 90%; } }
+  .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
   .card__heading {
     height: 26rem;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -38,7 +43,7 @@
       position: relative; }
       .card__heading__img-all {
         position: absolute;
-        width: 35%;
+        width: 16rem;
         height: 12rem;
         box-shadow: 0 1.5rem 4rem rgba(29, 29, 29, 0.15);
         border-radius: 2px;
@@ -89,6 +94,7 @@
     letter-spacing: 0.1rem;
     padding: 1.3rem;
     color: #353535;
+    overflow: auto;
     display: flex;
     align-items: center; }
     @media only screen and (max-width: 75em) {
@@ -137,6 +143,14 @@
       transform: scale(1.2);
       border-radius: 5px; }
 
+.grabbable {
+  cursor: move;
+  cursor: grab;
+  cursor: -webkit-grab; }
+  .grabbable:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing; }
+
 .bg-video {
   position: absolute;
   top: 0;
@@ -144,7 +158,7 @@
   height: 100%;
   width: 100%;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.3;
   overflow: hidden; }
   .bg-video__content {
     height: 100%;
@@ -194,22 +208,19 @@
       height: 76vh;
       background-image: linear-gradient(to right bottom, rgba(226, 226, 226, 0.6), rgba(119, 119, 119, 0.6)), url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_450/v1615841752/portfolio/caspar-camille-rubin-7SDoly3FV_0-unsplash_qz5bt5.jpg") !important; } }
 
+.about-me_imgBox {
+  width: 20rem;
+  height: 20rem; }
+
 .about-me__img {
-  width: 35%;
-  height: 50rem;
-  background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_700/v1615846326/portfolio/me_ocryct.png");
-  background-size: cover;
-  background-position: center;
+  width: 40%;
+  height: auto;
   position: absolute;
   bottom: -0.1rem;
-  z-index: -1;
-  background-repeat: no-repeat; }
+  z-index: -1; }
   @media only screen and (max-width: 37.5em) {
     .about-me__img {
-      background-size: 100%;
-      width: 56%;
-      height: 30rem;
-      background-image: url("https://res.cloudinary.com/dytheecsk/image/upload/c_scale,w_304/v1615846326/portfolio/me_ocryct.png") !important; } }
+      width: 60%; } }
 
 .about-me__content {
   width: 65%;
@@ -288,7 +299,8 @@
   right: -13.5rem;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   border-radius: 50%;
-  box-shadow: 0 1rem 3rem rgba(29, 29, 29, 0.3); }
+  box-shadow: 0 1rem 3rem rgba(29, 29, 29, 0.3);
+  transition: all .3s ease-out; }
   @media only screen and (max-width: 37.5em) {
     .hamburger__background {
       height: 60vh;
@@ -303,7 +315,9 @@
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+  opacity: 1;
+  transition: all .4s ease; }
   @media only screen and (max-width: 37.5em) {
     .hamburger__list {
       transform: translate(-55%, -30%); } }
@@ -330,6 +344,9 @@
   background-position: 100%;
   color: #1d1d1d;
   transform: translateX(1rem); }
+
+.visible {
+  opacity: 1; }
 
 @-webkit-keyframes bounceIn {
   0%,
@@ -586,6 +603,9 @@ body {
     .u-margin-top-huge {
       margin-top: 3rem !important; } }
 
+.padding-left {
+  padding-left: 3rem; }
+
 .row {
   max-width: 114rem;
   margin: 0 auto; }
@@ -653,6 +673,7 @@ body {
         left: 2rem; } }
   .header__logo {
     height: 28.5rem;
+    width: auto;
     border-radius: 50%;
     transition: all 0.3s; }
     .header__logo:hover {

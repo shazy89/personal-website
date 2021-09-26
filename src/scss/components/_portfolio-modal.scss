@@ -10,16 +10,11 @@
   &__content {
     @include absCenter;
     width: 80%;
-
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.5s 0.2s;
-
-    //   &__after {
-
-    //   }
     &-video {
       height: 80vh;
       width: 100%;
