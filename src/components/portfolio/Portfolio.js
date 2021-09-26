@@ -9,12 +9,14 @@ const sliderSettings = {
   dots: true,
   infinite: true,
   accessibility: true,
-  speed: 500,
   slidesToShow: 3,
   slidesToScroll: 2,
   initialSlide: 0,
   arrows: false,
-
+  autoplay: true,
+  speed: 800,
+  autoplaySpeed: 6000,
+  cssEase: 'linear',
   responsive: [
     {
       breakpoint: 1200,
@@ -33,9 +35,6 @@ const sliderSettings = {
       },
     },
   ],
-};
-const padIng = {
-  pading: '1rem',
 };
 
 const Portfolio = () => {
