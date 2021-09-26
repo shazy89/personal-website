@@ -7,11 +7,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 const sliderSettings = {
   dots: true,
-  infinite: false,
+  infinite: true,
   accessibility: true,
   arrows: true,
   speed: 500,
-  slidesToShow: 2,
+  slidesToShow: 3,
   slidesToScroll: 2,
   initialSlide: 0,
 
@@ -25,6 +25,9 @@ const sliderSettings = {
       },
     },
   ],
+};
+const padIng = {
+  pading: '1rem',
 };
 
 const Portfolio = () => {
@@ -45,8 +48,9 @@ const Portfolio = () => {
             Your browser is not supported!
           </video>
         </div>
-
-        <SlickSlider {...sliderSettings}>{displayProjects}</SlickSlider>
+        <div style={padIng}>
+          <SlickSlider {...sliderSettings}>{displayProjects}</SlickSlider>
+        </div>
       </section>
     </>
   );

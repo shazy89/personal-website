@@ -3,11 +3,11 @@
   height: 52rem;
   position: relative;
   
-  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.945);
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   border-radius: 3px;
-  width: 45%;
+  width: 90%;
   @include respond(tab-land) {
 
     height: 60rem;
@@ -197,3 +197,15 @@
   }
 }
 
+.grabbable {
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  &:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
+}
+ /* (Optional) Apply a "closed-hand" cursor during drag operation. */
