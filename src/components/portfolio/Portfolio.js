@@ -2,6 +2,30 @@ import React, { useMemo } from 'react';
 import Card from '../card/Card';
 import video from '../../assets/images/portfolio/coding.mp4';
 import { projects } from './Projects';
+import SlickSlider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+const sliderSettings = {
+  dots: true,
+  infinite: false,
+  accessibility: true,
+  arrows: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  initialSlide: 0,
+
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        initialSlide: 1,
+      },
+    },
+  ],
+};
 
 const Portfolio = () => {
   const displayProjects = useMemo(
@@ -10,19 +34,21 @@ const Portfolio = () => {
     []
   );
   return (
-    <section
-      id="section_portfolio"
-      className="section-portfolio u-margin-top-huge"
-    >
-      <div className="bg-video">
-        <video className="bg-video__content" autoPlay muted loop>
-          <source src={video} type="video/mp4" />
-          Your browser is not supported!
-        </video>
-      </div>
+    <>
+      <section
+        id="section_portfolio"
+        className="section-portfolio u-margin-top-huge"
+      >
+        <div className="bg-video">
+          <video className="bg-video__content" autoPlay muted loop>
+            <source src={video} type="video/mp4" />
+            Your browser is not supported!
+          </video>
+        </div>
 
-      <div className="card_container">{displayProjects}</div>
-    </section>
+        <SlickSlider {...sliderSettings}>{displayProjects}</SlickSlider>
+      </section>
+    </>
   );
 };
 

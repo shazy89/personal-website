@@ -27,7 +27,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
     "react-scroll-parallax": "^2.4.0",
+    "react-slick": "^0.28.1",
     "react-spring": "^9.2.4",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
