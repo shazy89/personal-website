@@ -9,13 +9,21 @@ const sliderSettings = {
   dots: true,
   infinite: true,
   accessibility: true,
-  arrows: true,
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 2,
   initialSlide: 0,
+  arrows: false,
 
   responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
     {
       breakpoint: 600,
       settings: {
@@ -48,7 +56,7 @@ const Portfolio = () => {
             Your browser is not supported!
           </video>
         </div>
-        <div style={padIng}>
+        <div className="padding-left">
           <SlickSlider {...sliderSettings}>{displayProjects}</SlickSlider>
         </div>
       </section>
