@@ -7,16 +7,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 const sliderSettings = {
   dots: true,
-  infinite: true,
+
   accessibility: true,
   slidesToShow: 3,
   slidesToScroll: 2,
   initialSlide: 0,
   arrows: false,
-  autoplay: true,
   speed: 800,
-  autoplaySpeed: 6000,
-  cssEase: 'linear',
   responsive: [
     {
       breakpoint: 1200,

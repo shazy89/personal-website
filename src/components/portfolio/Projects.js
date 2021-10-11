@@ -75,7 +75,7 @@ export const projects = [
   {
     id: 3,
     name: 'RentMe',
-    github: 'https://github.com/shazy89/rent-me-web',
+
     mobGithub: 'https://github.com/shazy89/RentMe-mobile',
     webApp: 'https://rent-me-front-end.herokuapp.com/',
     //demoMob: "https://www.youtube.com/embed/IEPtg8YQBbI",
