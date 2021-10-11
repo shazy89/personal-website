@@ -116,16 +116,16 @@
     &--project {
       height: 15rem;
       font-size: 1.7rem;
-      line-height: 1.43;
-      letter-spacing: 0.1rem;
+      line-height: 160%;
+      letter-spacing: 1px;
       padding: 1.3rem;
-      color: $card-text-color-1;
+      color: $card-text-color-1;//
       overflow: auto;
-      display: flex;
       align-items: center;
       @include respond(tab-land) {
         font-size: 2rem;
       }
+
     }
     &--technologies {
       display: flex;
