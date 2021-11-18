@@ -108,3 +108,21 @@
   -webkit-animation: bounceOutUp 3s ease-in 0.4s;
   animation: bounceOutUp 3s ease-in 0.4s;
 }
+.box {
+  width: 5rem;
+  height: 5rem;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+}
+.box_ansa {
+  width: 5rem;
+  height: 5rem;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+}
